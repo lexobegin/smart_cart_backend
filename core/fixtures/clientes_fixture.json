@@ -1,0 +1,41 @@
+[
+    {
+      "model": "core.producto",
+      "pk": 1,
+      "fields": {
+        "nombre": "Mesa",
+        "descripcion": "Mesa de comedor",
+        "precio": "100.00",
+        "stock": 10
+      }
+    },
+    {
+      "model": "core.producto",
+      "pk": 2,
+      "fields": {
+        "nombre": "Silla",
+        "descripcion": "Silla ergonómica",
+        "precio": "50.00",
+        "stock": 20
+      }
+    },
+    {
+      "model": "auth.user",
+      "pk": 1,
+      "fields": {
+        "username": "cliente1",
+        "email": "cliente1@example.com",
+        "password": "pbkdf2_sha256$260000$test$hashedtest", 
+        "is_superuser": false,
+        "is_staff": false
+      }
+    },
+    {
+      "model": "core.user",
+      "pk": 1,
+      "fields": {
+        "role": "CLIENTE"
+      }
+    }
+  ]
+  
