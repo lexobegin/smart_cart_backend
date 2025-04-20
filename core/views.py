@@ -3,8 +3,8 @@ from rest_framework import viewsets, generics
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from .models import Producto, User, CarritoItem, Venta
-from .serializers import ProductoSerializer, ClienteSerializer, CarritoItemSerializer, VentaSerializer
+from .models import Atributo, Bitacora, Categoria, Descuento, DetalleSalida, Factura, Inventario, MetodoPago, NotaDevolucion, NotaSalida, Producto, ProductoAtributo, User, CarritoItem, Venta
+from .serializers import AtributoSerializer, BitacoraSerializer, CategoriaSerializer, DescuentoSerializer, DetalleSalidaSerializer, FacturaSerializer, InventarioSerializer, MetodoPagoSerializer, NotaDevolucionSerializer, NotaSalidaSerializer, ProductoAtributoSerializer, ProductoSerializer, ClienteSerializer, CarritoItemSerializer, VentaSerializer
 from core.permissions import IsAdminOrEmpleado, IsCliente, PermisosPorAccion
 
 from rest_framework.decorators import api_view, permission_classes
@@ -101,3 +101,58 @@ class ReconocimientoVozAPIView(APIView):
             return Response({"error": "No se pudo entender el audio."}, status=status.HTTP_400_BAD_REQUEST)
         except sr.RequestError as e:
             return Response({"error": f"Error en el servicio de reconocimiento: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        
+class CategoriaViewSet(viewsets.ModelViewSet):
+    queryset = Categoria.objects.all()
+    serializer_class = CategoriaSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+    
+class BitacoraViewSet(viewsets.ModelViewSet):
+    queryset = Bitacora.objects.all()
+    serializer_class = BitacoraSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+    
+class DescuentoViewSet(viewsets.ModelViewSet):
+    queryset = Descuento.objects.all()
+    serializer_class = DescuentoSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+    
+class FacturaViewSet(viewsets.ModelViewSet):
+    queryset = Factura.objects.all()
+    serializer_class = FacturaSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]  
+    
+class MetodoPagoViewSet(viewsets.ModelViewSet):
+    queryset = MetodoPago.objects.all()
+    serializer_class = MetodoPagoSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]  
+    
+class NotaDevolucionViewSet(viewsets.ModelViewSet):
+    queryset = NotaDevolucion.objects.all()
+    serializer_class = NotaDevolucionSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]  
+    
+class AtributoViewSet(viewsets.ModelViewSet):
+    queryset = Atributo.objects.all()
+    serializer_class = AtributoSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado] 
+    
+class ProductoAtributoViewSet(viewsets.ModelViewSet):
+    queryset = ProductoAtributo.objects.all()
+    serializer_class = ProductoAtributoSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado] 
+    
+class InventarioViewSet(viewsets.ModelViewSet):
+    queryset = Inventario.objects.all()
+    serializer_class = InventarioSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado] 
+    
+class NotaSalidaViewSet(viewsets.ModelViewSet):
+    queryset = NotaSalida.objects.all()
+    serializer_class = NotaSalidaSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado] 
+    
+class DetalleSalidaViewSet(viewsets.ModelViewSet):
+    queryset = DetalleSalida.objects.all()
+    serializer_class = DetalleSalidaSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado] 

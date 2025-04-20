@@ -1,6 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import ProductoViewSet, ClienteViewSet, CarritoItemViewSet, VentaViewSet, ClienteDashboardView, VerRecomendacionesView, CarritoMovilView, obtener_recomendaciones, recomendaciones_cliente_actual, ReconocimientoVozAPIView
+from .views import AtributoViewSet, BitacoraViewSet, CategoriaViewSet, DescuentoViewSet, FacturaViewSet, InventarioViewSet, MetodoPagoViewSet, NotaDevolucionViewSet, NotaSalidaViewSet, ProductoViewSet, ClienteViewSet, CarritoItemViewSet, VentaViewSet, ClienteDashboardView, VerRecomendacionesView, CarritoMovilView, obtener_recomendaciones, recomendaciones_cliente_actual, ReconocimientoVozAPIView
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 
@@ -9,6 +9,15 @@ router.register(r'productos', ProductoViewSet)
 router.register(r'clientes', ClienteViewSet)
 router.register(r'carrito', CarritoItemViewSet)
 router.register(r'ventas', VentaViewSet)
+router.register(r'categorias', CategoriaViewSet)
+router.register(r'bitacoras', BitacoraViewSet)
+router.register(r'descuentos', DescuentoViewSet)
+router.register(r'facturas', FacturaViewSet)
+router.register(r'metodo-pagos', MetodoPagoViewSet)
+router.register(r'nota-devoluciones', NotaDevolucionViewSet)
+router.register(r'nota-salidas', NotaSalidaViewSet)
+router.register(r'atributos', AtributoViewSet)
+router.register(r'inventarios', InventarioViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

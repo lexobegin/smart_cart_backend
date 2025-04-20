@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Producto, User, CarritoItem, Venta, DetalleVenta
+from .models import Atributo, Bitacora, Categoria, Descuento, DetalleDevolucion, Factura, Inventario, MetodoPago, NotaDevolucion, Producto, ProductoAtributo, User, CarritoItem, Venta, DetalleVenta
 
 class ProductoSerializer(serializers.ModelSerializer):
     class Meta:
@@ -38,3 +38,72 @@ class VentaSerializer(serializers.ModelSerializer):
         for detalle_data in detalles_data:
             DetalleVenta.objects.create(venta=venta, **detalle_data)
         return venta
+
+# serializacion Categoria
+class CategoriaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Categoria
+        fields = ['id', 'nombre', 'descripcion']
+        
+# serializacion Bitacora
+class BitacoraSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Bitacora
+        fields = ['id', 'usuario_id', 'accion', 'fecha']
+ 
+# serializacion Descuento       
+class DescuentoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Descuento
+        fields = ['id', 'nombre', 'descripcion', 'porcentaje']
+        
+class FacturaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Factura
+        fields = ['id', 'fecha_emision', 'total', 'notaventa_id']
+        
+class MetodoPagoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = MetodoPago
+        fields = ['id', 'tipo', 'descripcion']
+        
+class NotaDevolucionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NotaDevolucion
+        fields = ['id', 'cliente', 'fecha']
+        
+class DetalleDevolucionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = DetalleDevolucion
+        fields = ['id', 'producto', 'cantidad', 'devolucion']
+        
+class AtributoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Atributo
+        fields = ['id', 'nombre']
+        
+class ProductoAtributoSerializer(serializers.ModelSerializer):
+    producto = ProductoSerializer()
+    atributo = AtributoSerializer()
+
+    class Meta:
+        model = ProductoAtributo
+        fields = ['id','producto', 'atributo', 'valor']
+        
+class InventarioSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Inventario
+        fields = ['id', 'cantidad', 'producto_id', 'fecha_ingreso', 'fecha_salida']
+        
+class NotaSalidaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Atributo
+        fields = ['id', 'fecha', 'motivo']
+        
+class DetalleSalidaSerializer(serializers.ModelSerializer):
+    producto = ProductoSerializer()
+    atributo = AtributoSerializer()
+
+    class Meta:
+        model = ProductoAtributo
+        fields = ['id','producto', 'atributo', 'cantidad']

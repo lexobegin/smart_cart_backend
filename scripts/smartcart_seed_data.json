@@ -1,0 +1,3468 @@
+{
+  "clientes": [
+    {
+      "username": "primitivobenavides",
+      "email": "arielagustin@gmail.com",
+      "first_name": "Eligia",
+      "last_name": "Gascón",
+      "password": "cliente123"
+    },
+    {
+      "username": "xexposito",
+      "email": "arandaaaron@gmail.com",
+      "first_name": "Rosa",
+      "last_name": "Pizarro",
+      "password": "cliente123"
+    },
+    {
+      "username": "oaroca",
+      "email": "rupertotoro@hotmail.com",
+      "first_name": "Nidia",
+      "last_name": "Andrade",
+      "password": "cliente123"
+    },
+    {
+      "username": "rmorell",
+      "email": "landaazahar@hotmail.com",
+      "first_name": "León",
+      "last_name": "Teruel",
+      "password": "cliente123"
+    },
+    {
+      "username": "jenniferalegria",
+      "email": "rufinoaznar@asensio.es",
+      "first_name": "Isidro",
+      "last_name": "Bartolomé",
+      "password": "cliente123"
+    },
+    {
+      "username": "americamercader",
+      "email": "gomilajuan-antonio@hotmail.com",
+      "first_name": "Paola",
+      "last_name": "Font",
+      "password": "cliente123"
+    },
+    {
+      "username": "bquero",
+      "email": "fernanda63@hotmail.com",
+      "first_name": "Juanita",
+      "last_name": "Mesa",
+      "password": "cliente123"
+    },
+    {
+      "username": "amandalamas",
+      "email": "sfeijoo@hotmail.com",
+      "first_name": "Paca",
+      "last_name": "Novoa",
+      "password": "cliente123"
+    },
+    {
+      "username": "graciela42",
+      "email": "carmeloorozco@vazquez.com",
+      "first_name": "Florentina",
+      "last_name": "Piquer",
+      "password": "cliente123"
+    },
+    {
+      "username": "dbernal",
+      "email": "salazarmaximino@canizares-gallardo.net",
+      "first_name": "Agustín",
+      "last_name": "Olmo",
+      "password": "cliente123"
+    },
+    {
+      "username": "malena21",
+      "email": "selenadiez@hotmail.com",
+      "first_name": "Adalberto",
+      "last_name": "Pozuelo",
+      "password": "cliente123"
+    },
+    {
+      "username": "mateo74",
+      "email": "ignaciatorre@planas.com",
+      "first_name": "Carina",
+      "last_name": "Alarcón",
+      "password": "cliente123"
+    },
+    {
+      "username": "guadalupe13",
+      "email": "samu70@hotmail.com",
+      "first_name": "Bruno",
+      "last_name": "Roura",
+      "password": "cliente123"
+    },
+    {
+      "username": "romuloguzman",
+      "email": "amayavioleta@carreras.es",
+      "first_name": "Augusto",
+      "last_name": "Espada",
+      "password": "cliente123"
+    },
+    {
+      "username": "rosa-maria79",
+      "email": "ipina@luque.org",
+      "first_name": "Cristóbal",
+      "last_name": "Narváez",
+      "password": "cliente123"
+    },
+    {
+      "username": "bejaranoandres-felipe",
+      "email": "loreto86@hotmail.com",
+      "first_name": "Nazario",
+      "last_name": "Valverde",
+      "password": "cliente123"
+    },
+    {
+      "username": "fernando22",
+      "email": "dmarin@zurita.es",
+      "first_name": "Tania",
+      "last_name": "Mendizábal",
+      "password": "cliente123"
+    },
+    {
+      "username": "bolanosedmundo",
+      "email": "mercedes88@hotmail.com",
+      "first_name": "Buenaventura",
+      "last_name": "Vicente",
+      "password": "cliente123"
+    },
+    {
+      "username": "silvio59",
+      "email": "roldancanas@yahoo.com",
+      "first_name": "Griselda",
+      "last_name": "Uribe",
+      "password": "cliente123"
+    },
+    {
+      "username": "quirogabonifacio",
+      "email": "donato19@frias.es",
+      "first_name": "Ernesto",
+      "last_name": "Agustín",
+      "password": "cliente123"
+    },
+    {
+      "username": "pabellan",
+      "email": "reinaldobaena@gmail.com",
+      "first_name": "Marta",
+      "last_name": "Lerma",
+      "password": "cliente123"
+    },
+    {
+      "username": "osunadominga",
+      "email": "jose-angelarroyo@machado-blanco.es",
+      "first_name": "Camila",
+      "last_name": "Alcalá",
+      "password": "cliente123"
+    },
+    {
+      "username": "alvaro24",
+      "email": "uariza@gmail.com",
+      "first_name": "Pancho",
+      "last_name": "Palacio",
+      "password": "cliente123"
+    },
+    {
+      "username": "ivillalonga",
+      "email": "fibarra@yahoo.com",
+      "first_name": "Mohamed",
+      "last_name": "Vargas",
+      "password": "cliente123"
+    },
+    {
+      "username": "puentechuy",
+      "email": "iyuste@amo.net",
+      "first_name": "Haydée",
+      "last_name": "Ayala",
+      "password": "cliente123"
+    },
+    {
+      "username": "valero95",
+      "email": "aurelianocisneros@morata-ruiz.es",
+      "first_name": "Clara",
+      "last_name": "Amor",
+      "password": "cliente123"
+    },
+    {
+      "username": "coral61",
+      "email": "xcal@gmail.com",
+      "first_name": "Sandra",
+      "last_name": "Costa",
+      "password": "cliente123"
+    },
+    {
+      "username": "brunilda82",
+      "email": "cerdandelia@gmail.com",
+      "first_name": "Zacarías",
+      "last_name": "Mayoral",
+      "password": "cliente123"
+    },
+    {
+      "username": "cuetosalvador",
+      "email": "jluz@diaz-gallego.com",
+      "first_name": "María Fernanda",
+      "last_name": "Acedo",
+      "password": "cliente123"
+    },
+    {
+      "username": "eligiagargallo",
+      "email": "asensiojeremias@gelabert.com",
+      "first_name": "Rosaura",
+      "last_name": "Valencia",
+      "password": "cliente123"
+    },
+    {
+      "username": "lpina",
+      "email": "maria-belen17@porcel.com",
+      "first_name": "Mireia",
+      "last_name": "Hervia",
+      "password": "cliente123"
+    },
+    {
+      "username": "isidroroig",
+      "email": "penalverester@roca-gutierrez.net",
+      "first_name": "Celso",
+      "last_name": "Ballesteros",
+      "password": "cliente123"
+    },
+    {
+      "username": "tonitalavera",
+      "email": "xarrieta@amo-alba.com",
+      "first_name": "Zaida",
+      "last_name": "Alcántara",
+      "password": "cliente123"
+    },
+    {
+      "username": "ivilalta",
+      "email": "bsabater@palmer.es",
+      "first_name": "Ileana",
+      "last_name": "Amaya",
+      "password": "cliente123"
+    },
+    {
+      "username": "tomasvillaverde",
+      "email": "mariapriego@zaragoza.org",
+      "first_name": "Aarón",
+      "last_name": "Morales",
+      "password": "cliente123"
+    },
+    {
+      "username": "bautista49",
+      "email": "contrerasbienvenida@ramirez.com",
+      "first_name": "Evita",
+      "last_name": "Somoza",
+      "password": "cliente123"
+    },
+    {
+      "username": "agrande",
+      "email": "cesarjulian@yahoo.com",
+      "first_name": "Reina",
+      "last_name": "Palomares",
+      "password": "cliente123"
+    },
+    {
+      "username": "leopoldo71",
+      "email": "debora13@perera-pallares.net",
+      "first_name": "Rafa",
+      "last_name": "Arroyo",
+      "password": "cliente123"
+    },
+    {
+      "username": "rosalinaamat",
+      "email": "zcarlos@alvarez.com",
+      "first_name": "Lucio",
+      "last_name": "Salas",
+      "password": "cliente123"
+    },
+    {
+      "username": "andresbarbara",
+      "email": "dbenet@gmail.com",
+      "first_name": "Chita",
+      "last_name": "Borrell",
+      "password": "cliente123"
+    },
+    {
+      "username": "maricela44",
+      "email": "peinadopaulino@hotmail.com",
+      "first_name": "Celso",
+      "last_name": "Cámara",
+      "password": "cliente123"
+    },
+    {
+      "username": "olegariofajardo",
+      "email": "gcabello@riquelme.com",
+      "first_name": "Octavio",
+      "last_name": "Peinado",
+      "password": "cliente123"
+    },
+    {
+      "username": "marcelino92",
+      "email": "castilloxavier@pombo.com",
+      "first_name": "Celestina",
+      "last_name": "Coloma",
+      "password": "cliente123"
+    },
+    {
+      "username": "beatrizpenas",
+      "email": "ginerrene@izquierdo-angulo.es",
+      "first_name": "Fernanda",
+      "last_name": "Alegre",
+      "password": "cliente123"
+    },
+    {
+      "username": "iglesiasfabian",
+      "email": "anselmasaenz@hotmail.com",
+      "first_name": "Felipe",
+      "last_name": "Alcántara",
+      "password": "cliente123"
+    },
+    {
+      "username": "alemanrafaela",
+      "email": "monterobernardino@rodenas.com",
+      "first_name": "Heriberto",
+      "last_name": "Teruel",
+      "password": "cliente123"
+    },
+    {
+      "username": "fsolana",
+      "email": "leocadia43@galvez.es",
+      "first_name": "Adrián",
+      "last_name": "Guardiola",
+      "password": "cliente123"
+    },
+    {
+      "username": "eangel",
+      "email": "reybenito@perello-patino.org",
+      "first_name": "Ágata",
+      "last_name": "Manuel",
+      "password": "cliente123"
+    },
+    {
+      "username": "elba52",
+      "email": "obarbero@marin.es",
+      "first_name": "Lourdes",
+      "last_name": "Navarrete",
+      "password": "cliente123"
+    },
+    {
+      "username": "bcalatayud",
+      "email": "leticiaarcos@yahoo.com",
+      "first_name": "Enrique",
+      "last_name": "Pino",
+      "password": "cliente123"
+    },
+    {
+      "username": "ksalmeron",
+      "email": "nazaret27@bosch.com",
+      "first_name": "Jesús",
+      "last_name": "Seguí",
+      "password": "cliente123"
+    },
+    {
+      "username": "cerropatricia",
+      "email": "cesar24@gutierrez-aguado.com",
+      "first_name": "Amaya",
+      "last_name": "Sureda",
+      "password": "cliente123"
+    },
+    {
+      "username": "sanseutimio",
+      "email": "belengonzalez@gmail.com",
+      "first_name": "Donato",
+      "last_name": "Elías",
+      "password": "cliente123"
+    },
+    {
+      "username": "irmacuevas",
+      "email": "isidora18@gmail.com",
+      "first_name": "René",
+      "last_name": "Barreda",
+      "password": "cliente123"
+    },
+    {
+      "username": "mesabonifacio",
+      "email": "pelayovalverde@hotmail.com",
+      "first_name": "Emilio",
+      "last_name": "Montes",
+      "password": "cliente123"
+    },
+    {
+      "username": "cidjavier",
+      "email": "pelayo67@yahoo.com",
+      "first_name": "Rosenda",
+      "last_name": "Solano",
+      "password": "cliente123"
+    },
+    {
+      "username": "romannico",
+      "email": "gallardoeusebio@salom.com",
+      "first_name": "Jesusa",
+      "last_name": "Casares",
+      "password": "cliente123"
+    },
+    {
+      "username": "rebeca43",
+      "email": "maria-carmenmarco@artigas-mateu.com",
+      "first_name": "Sol",
+      "last_name": "Lara",
+      "password": "cliente123"
+    },
+    {
+      "username": "cirovarela",
+      "email": "cayetana88@yahoo.com",
+      "first_name": "Sandalio",
+      "last_name": "Fiol",
+      "password": "cliente123"
+    },
+    {
+      "username": "ccardenas",
+      "email": "canteroantonia@arregui.com",
+      "first_name": "Amalia",
+      "last_name": "Pelayo",
+      "password": "cliente123"
+    },
+    {
+      "username": "deliallorente",
+      "email": "gloria19@yahoo.com",
+      "first_name": "Georgina",
+      "last_name": "Marti",
+      "password": "cliente123"
+    },
+    {
+      "username": "aespada",
+      "email": "purificacion23@gmail.com",
+      "first_name": "Palmira",
+      "last_name": "Molins",
+      "password": "cliente123"
+    },
+    {
+      "username": "alvarooliveras",
+      "email": "maria-jesus47@abril.com",
+      "first_name": "Purificación",
+      "last_name": "Fajardo",
+      "password": "cliente123"
+    },
+    {
+      "username": "pedrosaerasmo",
+      "email": "edu31@lucas.es",
+      "first_name": "José María",
+      "last_name": "Arana",
+      "password": "cliente123"
+    },
+    {
+      "username": "ortegaeric",
+      "email": "revillacustodia@aguilo-baena.es",
+      "first_name": "Mario",
+      "last_name": "Mateo",
+      "password": "cliente123"
+    },
+    {
+      "username": "chuchobautista",
+      "email": "galobejarano@viana.net",
+      "first_name": "Graciana",
+      "last_name": "Adadia",
+      "password": "cliente123"
+    },
+    {
+      "username": "veraayllon",
+      "email": "nogueraalfonso@hotmail.com",
+      "first_name": "Lisandro",
+      "last_name": "Calderon",
+      "password": "cliente123"
+    },
+    {
+      "username": "amigoconstanza",
+      "email": "torregonzalo@mateos.org",
+      "first_name": "Leandra",
+      "last_name": "Sastre",
+      "password": "cliente123"
+    },
+    {
+      "username": "ogimenez",
+      "email": "usimo@hotmail.com",
+      "first_name": "Remedios",
+      "last_name": "Mate",
+      "password": "cliente123"
+    },
+    {
+      "username": "leyreesparza",
+      "email": "juan75@canales-viana.com",
+      "first_name": "Marisol",
+      "last_name": "Benito",
+      "password": "cliente123"
+    },
+    {
+      "username": "nicolaspaola",
+      "email": "palaciosjuan-carlos@yahoo.com",
+      "first_name": "Evita",
+      "last_name": "Iniesta",
+      "password": "cliente123"
+    },
+    {
+      "username": "soniasolera",
+      "email": "salesjimena@gmail.com",
+      "first_name": "Edelmiro",
+      "last_name": "Álvarez",
+      "password": "cliente123"
+    },
+    {
+      "username": "matildemadrid",
+      "email": "jacinto73@hotmail.com",
+      "first_name": "Filomena",
+      "last_name": "Rueda",
+      "password": "cliente123"
+    },
+    {
+      "username": "atilionavarro",
+      "email": "xcarbajo@bermejo-flor.es",
+      "first_name": "Julio",
+      "last_name": "Garay",
+      "password": "cliente123"
+    },
+    {
+      "username": "feijoodomitila",
+      "email": "dmontana@yahoo.com",
+      "first_name": "Seve",
+      "last_name": "Vallés",
+      "password": "cliente123"
+    },
+    {
+      "username": "iantunez",
+      "email": "teofila47@yahoo.com",
+      "first_name": "Eligio",
+      "last_name": "Alegre",
+      "password": "cliente123"
+    },
+    {
+      "username": "aliciadonaire",
+      "email": "borja64@hotmail.com",
+      "first_name": "Elena",
+      "last_name": "Frías",
+      "password": "cliente123"
+    },
+    {
+      "username": "aitorruiz",
+      "email": "zdominguez@zaragoza.com",
+      "first_name": "Luz",
+      "last_name": "Estrada",
+      "password": "cliente123"
+    },
+    {
+      "username": "gema74",
+      "email": "sebastianugarte@abril.es",
+      "first_name": "Luna",
+      "last_name": "Bou",
+      "password": "cliente123"
+    },
+    {
+      "username": "pastorabustamante",
+      "email": "qfranch@viana-armengol.com",
+      "first_name": "Celestina",
+      "last_name": "Tello",
+      "password": "cliente123"
+    },
+    {
+      "username": "amateos",
+      "email": "gbolanos@yahoo.com",
+      "first_name": "Andrés",
+      "last_name": "Pol",
+      "password": "cliente123"
+    },
+    {
+      "username": "bayonakike",
+      "email": "bertacarro@mascaro-villaverde.es",
+      "first_name": "Bautista",
+      "last_name": "Bertrán",
+      "password": "cliente123"
+    },
+    {
+      "username": "inigo05",
+      "email": "molessilvio@hotmail.com",
+      "first_name": "Raúl",
+      "last_name": "Duarte",
+      "password": "cliente123"
+    },
+    {
+      "username": "sandraortega",
+      "email": "celestinatomas@polo.es",
+      "first_name": "Herminia",
+      "last_name": "Alfaro",
+      "password": "cliente123"
+    },
+    {
+      "username": "nandohuguet",
+      "email": "osanabria@gmail.com",
+      "first_name": "Juana",
+      "last_name": "Cervantes",
+      "password": "cliente123"
+    },
+    {
+      "username": "herminiaros",
+      "email": "osarmiento@fabregas.com",
+      "first_name": "Espiridión",
+      "last_name": "Quevedo",
+      "password": "cliente123"
+    },
+    {
+      "username": "joseescudero",
+      "email": "inmaculada05@gmail.com",
+      "first_name": "Jose Luis",
+      "last_name": "Ribas",
+      "password": "cliente123"
+    },
+    {
+      "username": "maribelvina",
+      "email": "charomorata@torrijos.net",
+      "first_name": "Aurora",
+      "last_name": "Cañas",
+      "password": "cliente123"
+    },
+    {
+      "username": "vicente13",
+      "email": "eutropiopelayo@julian.com",
+      "first_name": "Rafaela",
+      "last_name": "Poza",
+      "password": "cliente123"
+    },
+    {
+      "username": "garceseulalia",
+      "email": "ezequielrius@mesa-arenas.com",
+      "first_name": "Fabiana",
+      "last_name": "Mulet",
+      "password": "cliente123"
+    },
+    {
+      "username": "jnavarro",
+      "email": "nconde@esparza.org",
+      "first_name": "Gabriela",
+      "last_name": "Casals",
+      "password": "cliente123"
+    },
+    {
+      "username": "corominasoriana",
+      "email": "alcarazfelicidad@gmail.com",
+      "first_name": "Nicodemo",
+      "last_name": "Franch",
+      "password": "cliente123"
+    },
+    {
+      "username": "blas38",
+      "email": "primitivachaves@palma-ochoa.es",
+      "first_name": "Paola",
+      "last_name": "Oliver",
+      "password": "cliente123"
+    },
+    {
+      "username": "yessica55",
+      "email": "pomaresmohamed@yahoo.com",
+      "first_name": "Eric",
+      "last_name": "Meléndez",
+      "password": "cliente123"
+    },
+    {
+      "username": "amilcar13",
+      "email": "saritaaguilar@hotmail.com",
+      "first_name": "Soledad",
+      "last_name": "Izquierdo",
+      "password": "cliente123"
+    },
+    {
+      "username": "bayonamaite",
+      "email": "judithfortuny@gmail.com",
+      "first_name": "Iván",
+      "last_name": "Blanch",
+      "password": "cliente123"
+    },
+    {
+      "username": "palomoamarilis",
+      "email": "armengolvictoriano@tejedor-cardona.es",
+      "first_name": "Blas",
+      "last_name": "Cisneros",
+      "password": "cliente123"
+    },
+    {
+      "username": "obduliaburgos",
+      "email": "jalemany@hotmail.com",
+      "first_name": "Consuela",
+      "last_name": "Castilla",
+      "password": "cliente123"
+    },
+    {
+      "username": "josefa99",
+      "email": "natanaelmanzano@hotmail.com",
+      "first_name": "Guiomar",
+      "last_name": "Franco",
+      "password": "cliente123"
+    },
+    {
+      "username": "albatejera",
+      "email": "aguilerabenito@gmail.com",
+      "first_name": "Pascuala",
+      "last_name": "Ramón",
+      "password": "cliente123"
+    }
+  ],
+  "productos": [
+    {
+      "nombre": "Xiaomi Mi 11 Lite",
+      "descripcion": "Nam porro accusamus eum voluptatem.",
+      "precio": 1394.12,
+      "stock": 46,
+      "atributos": {
+        "Color": "Verde",
+        "Almacenamiento": "512GB",
+        "RAM": "4GB",
+        "Procesador": "Exynos 2100"
+      }
+    },
+    {
+      "nombre": "Samsung Galaxy A53",
+      "descripcion": "Nemo repudiandae corporis dicta. Recusandae debitis quo illum debitis.",
+      "precio": 367.69,
+      "stock": 12,
+      "atributos": {
+        "Color": "Rojo",
+        "Almacenamiento": "512GB",
+        "RAM": "6GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Motorola Moto E40",
+      "descripcion": "Totam inventore illo alias enim.",
+      "precio": 406.04,
+      "stock": 19,
+      "atributos": {
+        "Color": "Verde",
+        "Almacenamiento": "512GB",
+        "RAM": "12GB",
+        "Procesador": "Snapdragon 8 Gen 2"
+      }
+    },
+    {
+      "nombre": "Motorola Edge 30 Neo",
+      "descripcion": "In esse omnis impedit. Ut voluptatibus deleniti voluptates.",
+      "precio": 1077.48,
+      "stock": 16,
+      "atributos": {
+        "Color": "Blanco",
+        "Almacenamiento": "64GB",
+        "RAM": "6GB",
+        "Procesador": "Snapdragon 695"
+      }
+    },
+    {
+      "nombre": "Xiaomi Mi 11 Lite",
+      "descripcion": "Sunt laudantium blanditiis repudiandae quos enim aspernatur ipsum.",
+      "precio": 1158.97,
+      "stock": 14,
+      "atributos": {
+        "Color": "Blanco",
+        "Almacenamiento": "512GB",
+        "RAM": "8GB",
+        "Procesador": "Exynos 2100"
+      }
+    },
+    {
+      "nombre": "Motorola Moto G200",
+      "descripcion": "Nulla dolor qui sint. Quam quisquam deleniti sapiente accusamus quaerat.",
+      "precio": 1164.58,
+      "stock": 9,
+      "atributos": {
+        "Color": "Negro",
+        "Almacenamiento": "512GB",
+        "RAM": "4GB",
+        "Procesador": "Exynos 2100"
+      }
+    },
+    {
+      "nombre": "Motorola Moto G82",
+      "descripcion": "Nihil laudantium delectus eveniet inventore.",
+      "precio": 787.31,
+      "stock": 12,
+      "atributos": {
+        "Color": "Negro",
+        "Almacenamiento": "512GB",
+        "RAM": "4GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Apple iPhone 13",
+      "descripcion": "Neque quae quas ipsa ut unde officiis. Iusto laudantium dolore omnis.",
+      "precio": 562.76,
+      "stock": 39,
+      "atributos": {
+        "Color": "Blanco",
+        "Almacenamiento": "256GB",
+        "RAM": "8GB",
+        "Procesador": "Snapdragon 695"
+      }
+    },
+    {
+      "nombre": "Xiaomi Redmi Note 11",
+      "descripcion": "Doloribus quos ea at. Iste aperiam quae fugiat.",
+      "precio": 1469.75,
+      "stock": 25,
+      "atributos": {
+        "Color": "Blanco",
+        "Almacenamiento": "256GB",
+        "RAM": "4GB",
+        "Procesador": "A15 Bionic"
+      }
+    },
+    {
+      "nombre": "Samsung Galaxy S21",
+      "descripcion": "Nisi repellendus non quo itaque ipsam.",
+      "precio": 797.51,
+      "stock": 14,
+      "atributos": {
+        "Color": "Blanco",
+        "Almacenamiento": "256GB",
+        "RAM": "12GB",
+        "Procesador": "Snapdragon 8 Gen 2"
+      }
+    },
+    {
+      "nombre": "Samsung Galaxy S23 Ultra",
+      "descripcion": "Quas dolores quae dicta.",
+      "precio": 734.66,
+      "stock": 45,
+      "atributos": {
+        "Color": "Gris",
+        "Almacenamiento": "256GB",
+        "RAM": "4GB",
+        "Procesador": "Snapdragon 8 Gen 2"
+      }
+    },
+    {
+      "nombre": "Motorola Moto G82",
+      "descripcion": "Magnam voluptatibus ipsam facilis.",
+      "precio": 612.93,
+      "stock": 20,
+      "atributos": {
+        "Color": "Rojo",
+        "Almacenamiento": "128GB",
+        "RAM": "6GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Google Pixel 6",
+      "descripcion": "Recusandae assumenda beatae labore vitae exercitationem incidunt.",
+      "precio": 935.85,
+      "stock": 31,
+      "atributos": {
+        "Color": "Gris",
+        "Almacenamiento": "64GB",
+        "RAM": "12GB",
+        "Procesador": "Exynos 2100"
+      }
+    },
+    {
+      "nombre": "Google Pixel 7 Pro",
+      "descripcion": "Nesciunt ab repellendus libero id consequatur.",
+      "precio": 256.8,
+      "stock": 34,
+      "atributos": {
+        "Color": "Verde",
+        "Almacenamiento": "256GB",
+        "RAM": "4GB",
+        "Procesador": "A15 Bionic"
+      }
+    },
+    {
+      "nombre": "Google Pixel 6",
+      "descripcion": "Reprehenderit doloribus sapiente placeat sed.",
+      "precio": 753.13,
+      "stock": 30,
+      "atributos": {
+        "Color": "Negro",
+        "Almacenamiento": "256GB",
+        "RAM": "12GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Google Pixel 6",
+      "descripcion": "Commodi accusantium nemo ad hic libero.",
+      "precio": 1310.21,
+      "stock": 32,
+      "atributos": {
+        "Color": "Negro",
+        "Almacenamiento": "64GB",
+        "RAM": "12GB",
+        "Procesador": "Snapdragon 695"
+      }
+    },
+    {
+      "nombre": "Samsung Galaxy S23 Ultra",
+      "descripcion": "Consequuntur deleniti facere voluptates excepturi consequuntur velit.",
+      "precio": 314.64,
+      "stock": 14,
+      "atributos": {
+        "Color": "Verde",
+        "Almacenamiento": "256GB",
+        "RAM": "6GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Apple iPhone 13",
+      "descripcion": "Sequi adipisci minus quibusdam iure soluta laborum laboriosam.",
+      "precio": 1197.13,
+      "stock": 35,
+      "atributos": {
+        "Color": "Rojo",
+        "Almacenamiento": "64GB",
+        "RAM": "6GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Apple iPhone 13",
+      "descripcion": "Delectus ratione unde illum quae. Rerum nihil esse pariatur veritatis.",
+      "precio": 1018.12,
+      "stock": 17,
+      "atributos": {
+        "Color": "Rojo",
+        "Almacenamiento": "512GB",
+        "RAM": "4GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Motorola Moto G82",
+      "descripcion": "Provident illum occaecati amet excepturi. Quidem dignissimos ad.",
+      "precio": 970.61,
+      "stock": 8,
+      "atributos": {
+        "Color": "Azul",
+        "Almacenamiento": "512GB",
+        "RAM": "8GB",
+        "Procesador": "Exynos 2100"
+      }
+    },
+    {
+      "nombre": "Google Pixel 7 Pro",
+      "descripcion": "Doloribus repudiandae labore nemo necessitatibus numquam doloremque.",
+      "precio": 277.37,
+      "stock": 6,
+      "atributos": {
+        "Color": "Rojo",
+        "Almacenamiento": "512GB",
+        "RAM": "8GB",
+        "Procesador": "Snapdragon 8 Gen 2"
+      }
+    },
+    {
+      "nombre": "Xiaomi Mi 11 Lite",
+      "descripcion": "Tempora mollitia aliquam natus eos rem ipsa quo. Modi optio ea quos quia porro.",
+      "precio": 1199.93,
+      "stock": 47,
+      "atributos": {
+        "Color": "Verde",
+        "Almacenamiento": "64GB",
+        "RAM": "6GB",
+        "Procesador": "Exynos 2100"
+      }
+    },
+    {
+      "nombre": "Samsung Galaxy A53",
+      "descripcion": "Ab id rem accusantium praesentium iusto.",
+      "precio": 472.08,
+      "stock": 45,
+      "atributos": {
+        "Color": "Rojo",
+        "Almacenamiento": "256GB",
+        "RAM": "12GB",
+        "Procesador": "Snapdragon 8 Gen 2"
+      }
+    },
+    {
+      "nombre": "Motorola Moto E40",
+      "descripcion": "Aliquam deserunt ab consequatur eligendi perferendis. Nihil totam ea dolorem.",
+      "precio": 1490.87,
+      "stock": 16,
+      "atributos": {
+        "Color": "Verde",
+        "Almacenamiento": "64GB",
+        "RAM": "6GB",
+        "Procesador": "A15 Bionic"
+      }
+    },
+    {
+      "nombre": "Motorola Moto G200",
+      "descripcion": "Voluptatibus quas saepe asperiores. Numquam ratione sint vitae aperiam.",
+      "precio": 580.99,
+      "stock": 36,
+      "atributos": {
+        "Color": "Blanco",
+        "Almacenamiento": "128GB",
+        "RAM": "6GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Samsung Galaxy S21",
+      "descripcion": "Dolor laborum et quibusdam.",
+      "precio": 400.38,
+      "stock": 22,
+      "atributos": {
+        "Color": "Gris",
+        "Almacenamiento": "128GB",
+        "RAM": "12GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Apple iPhone 14",
+      "descripcion": "Eveniet iste aliquam dolor cupiditate et. Eius ab blanditiis doloribus.",
+      "precio": 964.12,
+      "stock": 33,
+      "atributos": {
+        "Color": "Gris",
+        "Almacenamiento": "128GB",
+        "RAM": "6GB",
+        "Procesador": "Exynos 2100"
+      }
+    },
+    {
+      "nombre": "Motorola Moto G82",
+      "descripcion": "Animi dolor repellendus neque nihil autem. Dolor nam minus dolores ad.",
+      "precio": 784.44,
+      "stock": 32,
+      "atributos": {
+        "Color": "Rojo",
+        "Almacenamiento": "64GB",
+        "RAM": "6GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Motorola Moto G82",
+      "descripcion": "Explicabo quibusdam ea vero. Vel earum necessitatibus cupiditate.",
+      "precio": 1389.87,
+      "stock": 41,
+      "atributos": {
+        "Color": "Verde",
+        "Almacenamiento": "128GB",
+        "RAM": "4GB",
+        "Procesador": "Snapdragon 8 Gen 2"
+      }
+    },
+    {
+      "nombre": "Motorola Moto G82",
+      "descripcion": "Perspiciatis quis est voluptate repellat eligendi.",
+      "precio": 401.7,
+      "stock": 47,
+      "atributos": {
+        "Color": "Verde",
+        "Almacenamiento": "128GB",
+        "RAM": "6GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Xiaomi Redmi Note 12",
+      "descripcion": "Esse ipsam blanditiis nostrum earum.",
+      "precio": 766.49,
+      "stock": 33,
+      "atributos": {
+        "Color": "Blanco",
+        "Almacenamiento": "512GB",
+        "RAM": "4GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Motorola Moto G200",
+      "descripcion": "Modi dolor accusamus sed earum reiciendis.",
+      "precio": 753.07,
+      "stock": 24,
+      "atributos": {
+        "Color": "Blanco",
+        "Almacenamiento": "64GB",
+        "RAM": "6GB",
+        "Procesador": "A15 Bionic"
+      }
+    },
+    {
+      "nombre": "Xiaomi Redmi Note 11",
+      "descripcion": "Nemo enim modi. Id molestiae neque dolor dignissimos velit veritatis.",
+      "precio": 1356.25,
+      "stock": 7,
+      "atributos": {
+        "Color": "Gris",
+        "Almacenamiento": "128GB",
+        "RAM": "8GB",
+        "Procesador": "Snapdragon 695"
+      }
+    },
+    {
+      "nombre": "Apple iPhone SE",
+      "descripcion": "Esse voluptates quae aliquid fugiat praesentium.",
+      "precio": 573.67,
+      "stock": 26,
+      "atributos": {
+        "Color": "Blanco",
+        "Almacenamiento": "512GB",
+        "RAM": "6GB",
+        "Procesador": "A15 Bionic"
+      }
+    },
+    {
+      "nombre": "Apple iPhone 14",
+      "descripcion": "Delectus eligendi repellendus repellat magni aliquid.",
+      "precio": 823.8,
+      "stock": 15,
+      "atributos": {
+        "Color": "Verde",
+        "Almacenamiento": "128GB",
+        "RAM": "12GB",
+        "Procesador": "Snapdragon 695"
+      }
+    },
+    {
+      "nombre": "Google Pixel 6",
+      "descripcion": "Eum atque iure molestias fugit earum. Fuga dolorum iure deleniti.",
+      "precio": 486.82,
+      "stock": 13,
+      "atributos": {
+        "Color": "Azul",
+        "Almacenamiento": "64GB",
+        "RAM": "4GB",
+        "Procesador": "Snapdragon 695"
+      }
+    },
+    {
+      "nombre": "Samsung Galaxy S22",
+      "descripcion": "Maxime natus blanditiis quidem repudiandae.",
+      "precio": 1483.17,
+      "stock": 39,
+      "atributos": {
+        "Color": "Azul",
+        "Almacenamiento": "256GB",
+        "RAM": "4GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Motorola Moto E40",
+      "descripcion": "Dolore repellat quasi esse cum facere.",
+      "precio": 472.63,
+      "stock": 14,
+      "atributos": {
+        "Color": "Negro",
+        "Almacenamiento": "128GB",
+        "RAM": "12GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Xiaomi Mi 11 Lite",
+      "descripcion": "Inventore vitae consectetur neque doloremque voluptatum aliquid eaque.",
+      "precio": 1306.13,
+      "stock": 34,
+      "atributos": {
+        "Color": "Azul",
+        "Almacenamiento": "128GB",
+        "RAM": "8GB",
+        "Procesador": "Exynos 2100"
+      }
+    },
+    {
+      "nombre": "Google Pixel 6",
+      "descripcion": "Amet maiores fugiat quisquam quos impedit itaque.",
+      "precio": 1319.79,
+      "stock": 30,
+      "atributos": {
+        "Color": "Negro",
+        "Almacenamiento": "128GB",
+        "RAM": "12GB",
+        "Procesador": "A15 Bionic"
+      }
+    },
+    {
+      "nombre": "Realme Realme 9 Pro",
+      "descripcion": "Nulla natus magni consequatur dolore molestias quas.",
+      "precio": 340.73,
+      "stock": 37,
+      "atributos": {
+        "Color": "Blanco",
+        "Almacenamiento": "128GB",
+        "RAM": "4GB",
+        "Procesador": "A15 Bionic"
+      }
+    },
+    {
+      "nombre": "Xiaomi Redmi Note 11",
+      "descripcion": "Totam neque delectus perspiciatis quas harum.",
+      "precio": 788.44,
+      "stock": 7,
+      "atributos": {
+        "Color": "Gris",
+        "Almacenamiento": "512GB",
+        "RAM": "4GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Motorola Moto G200",
+      "descripcion": "Eligendi quis esse possimus hic. Laboriosam sit voluptatibus inventore.",
+      "precio": 970.44,
+      "stock": 20,
+      "atributos": {
+        "Color": "Azul",
+        "Almacenamiento": "256GB",
+        "RAM": "4GB",
+        "Procesador": "Snapdragon 695"
+      }
+    },
+    {
+      "nombre": "Realme Realme GT Neo 3",
+      "descripcion": "Reiciendis in dolorem accusamus. Ut dolorum ullam.",
+      "precio": 402.2,
+      "stock": 42,
+      "atributos": {
+        "Color": "Blanco",
+        "Almacenamiento": "64GB",
+        "RAM": "6GB",
+        "Procesador": "Snapdragon 695"
+      }
+    },
+    {
+      "nombre": "Realme Realme 9 Pro",
+      "descripcion": "Odio aliquam officiis praesentium eveniet dolor.",
+      "precio": 801.84,
+      "stock": 16,
+      "atributos": {
+        "Color": "Azul",
+        "Almacenamiento": "128GB",
+        "RAM": "6GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "OnePlus OnePlus 10T",
+      "descripcion": "Repudiandae maiores voluptates non a inventore totam reiciendis.",
+      "precio": 1288.16,
+      "stock": 35,
+      "atributos": {
+        "Color": "Gris",
+        "Almacenamiento": "64GB",
+        "RAM": "6GB",
+        "Procesador": "Snapdragon 695"
+      }
+    },
+    {
+      "nombre": "Realme Realme C35",
+      "descripcion": "Qui ex adipisci eum commodi laboriosam. Corporis iste ratione.",
+      "precio": 1458.99,
+      "stock": 35,
+      "atributos": {
+        "Color": "Verde",
+        "Almacenamiento": "64GB",
+        "RAM": "8GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Apple iPhone 14 Pro",
+      "descripcion": "Enim natus sint reprehenderit expedita. Quo dolorem error repellat libero.",
+      "precio": 749.82,
+      "stock": 45,
+      "atributos": {
+        "Color": "Verde",
+        "Almacenamiento": "256GB",
+        "RAM": "12GB",
+        "Procesador": "Tensor G2"
+      }
+    },
+    {
+      "nombre": "Samsung Galaxy A53",
+      "descripcion": "Nemo excepturi ratione velit enim optio. Ducimus eius non voluptas alias.",
+      "precio": 487.56,
+      "stock": 23,
+      "atributos": {
+        "Color": "Azul",
+        "Almacenamiento": "256GB",
+        "RAM": "8GB",
+        "Procesador": "Exynos 2100"
+      }
+    },
+    {
+      "nombre": "Realme Realme GT Neo 3",
+      "descripcion": "Quaerat deleniti assumenda atque.",
+      "precio": 1232.05,
+      "stock": 22,
+      "atributos": {
+        "Color": "Rojo",
+        "Almacenamiento": "256GB",
+        "RAM": "6GB",
+        "Procesador": "Snapdragon 695"
+      }
+    }
+  ],
+  "ventas": [
+    {
+      "id": 1,
+      "cliente_id": 63,
+      "total": 3232.44
+    },
+    {
+      "id": 2,
+      "cliente_id": 100,
+      "total": 735.38
+    },
+    {
+      "id": 3,
+      "cliente_id": 95,
+      "total": 472.08
+    },
+    {
+      "id": 4,
+      "cliente_id": 2,
+      "total": 1218.1200000000001
+    },
+    {
+      "id": 5,
+      "cliente_id": 2,
+      "total": 400.38
+    },
+    {
+      "id": 6,
+      "cliente_id": 86,
+      "total": 1319.79
+    },
+    {
+      "id": 7,
+      "cliente_id": 45,
+      "total": 256.8
+    },
+    {
+      "id": 8,
+      "cliente_id": 98,
+      "total": 472.63
+    },
+    {
+      "id": 9,
+      "cliente_id": 64,
+      "total": 3864.4800000000005
+    },
+    {
+      "id": 10,
+      "cliente_id": 65,
+      "total": 1506.14
+    },
+    {
+      "id": 11,
+      "cliente_id": 15,
+      "total": 3696.1499999999996
+    },
+    {
+      "id": 12,
+      "cliente_id": 21,
+      "total": 1125.52
+    },
+    {
+      "id": 13,
+      "cliente_id": 27,
+      "total": 513.6
+    },
+    {
+      "id": 14,
+      "cliente_id": 78,
+      "total": 1417.8899999999999
+    },
+    {
+      "id": 15,
+      "cliente_id": 57,
+      "total": 1022.19
+    },
+    {
+      "id": 16,
+      "cliente_id": 7,
+      "total": 945.26
+    },
+    {
+      "id": 17,
+      "cliente_id": 43,
+      "total": 1022.19
+    },
+    {
+      "id": 18,
+      "cliente_id": 68,
+      "total": 2779.74
+    },
+    {
+      "id": 19,
+      "cliente_id": 35,
+      "total": 1576.88
+    },
+    {
+      "id": 20,
+      "cliente_id": 35,
+      "total": 1164.58
+    },
+    {
+      "id": 21,
+      "cliente_id": 77,
+      "total": 1490.87
+    },
+    {
+      "id": 22,
+      "cliente_id": 51,
+      "total": 3054.36
+    },
+    {
+      "id": 23,
+      "cliente_id": 22,
+      "total": 4068.75
+    },
+    {
+      "id": 24,
+      "cliente_id": 47,
+      "total": 1125.52
+    },
+    {
+      "id": 25,
+      "cliente_id": 91,
+      "total": 2911.32
+    },
+    {
+      "id": 26,
+      "cliente_id": 1,
+      "total": 1077.48
+    },
+    {
+      "id": 27,
+      "cliente_id": 32,
+      "total": 2471.3999999999996
+    },
+    {
+      "id": 28,
+      "cliente_id": 48,
+      "total": 2917.98
+    },
+    {
+      "id": 29,
+      "cliente_id": 75,
+      "total": 1310.21
+    },
+    {
+      "id": 30,
+      "cliente_id": 32,
+      "total": 2353.32
+    },
+    {
+      "id": 31,
+      "cliente_id": 82,
+      "total": 406.04
+    },
+    {
+      "id": 32,
+      "cliente_id": 4,
+      "total": 832.11
+    },
+    {
+      "id": 33,
+      "cliente_id": 65,
+      "total": 803.4
+    },
+    {
+      "id": 34,
+      "cliente_id": 60,
+      "total": 3959.37
+    },
+    {
+      "id": 35,
+      "cliente_id": 85,
+      "total": 975.12
+    },
+    {
+      "id": 36,
+      "cliente_id": 93,
+      "total": 3493.74
+    },
+    {
+      "id": 37,
+      "cliente_id": 37,
+      "total": 2966.34
+    },
+    {
+      "id": 38,
+      "cliente_id": 33,
+      "total": 832.11
+    },
+    {
+      "id": 39,
+      "cliente_id": 88,
+      "total": 1161.98
+    },
+    {
+      "id": 40,
+      "cliente_id": 54,
+      "total": 3476.91
+    },
+    {
+      "id": 41,
+      "cliente_id": 22,
+      "total": 973.64
+    },
+    {
+      "id": 42,
+      "cliente_id": 92,
+      "total": 2329.16
+    },
+    {
+      "id": 43,
+      "cliente_id": 28,
+      "total": 975.12
+    },
+    {
+      "id": 44,
+      "cliente_id": 74,
+      "total": 1532.98
+    },
+    {
+      "id": 45,
+      "cliente_id": 14,
+      "total": 2911.83
+    },
+    {
+      "id": 46,
+      "cliente_id": 66,
+      "total": 970.61
+    },
+    {
+      "id": 47,
+      "cliente_id": 23,
+      "total": 1205.1
+    },
+    {
+      "id": 48,
+      "cliente_id": 67,
+      "total": 2966.34
+    },
+    {
+      "id": 49,
+      "cliente_id": 76,
+      "total": 256.8
+    },
+    {
+      "id": 50,
+      "cliente_id": 1,
+      "total": 1197.13
+    },
+    {
+      "id": 51,
+      "cliente_id": 84,
+      "total": 2259.21
+    },
+    {
+      "id": 52,
+      "cliente_id": 49,
+      "total": 472.63
+    },
+    {
+      "id": 53,
+      "cliente_id": 12,
+      "total": 1417.8899999999999
+    },
+    {
+      "id": 54,
+      "cliente_id": 19,
+      "total": 2981.74
+    },
+    {
+      "id": 55,
+      "cliente_id": 1,
+      "total": 1310.21
+    },
+    {
+      "id": 56,
+      "cliente_id": 31,
+      "total": 1205.1
+    },
+    {
+      "id": 57,
+      "cliente_id": 23,
+      "total": 1940.88
+    },
+    {
+      "id": 58,
+      "cliente_id": 94,
+      "total": 2405.52
+    },
+    {
+      "id": 59,
+      "cliente_id": 3,
+      "total": 681.46
+    },
+    {
+      "id": 60,
+      "cliente_id": 99,
+      "total": 1940.88
+    },
+    {
+      "id": 61,
+      "cliente_id": 1,
+      "total": 2365.32
+    },
+    {
+      "id": 62,
+      "cliente_id": 75,
+      "total": 800.76
+    },
+    {
+      "id": 63,
+      "cliente_id": 23,
+      "total": 3599.79
+    },
+    {
+      "id": 64,
+      "cliente_id": 52,
+      "total": 3591.3900000000003
+    },
+    {
+      "id": 65,
+      "cliente_id": 91,
+      "total": 1018.12
+    },
+    {
+      "id": 66,
+      "cliente_id": 34,
+      "total": 3232.44
+    },
+    {
+      "id": 67,
+      "cliente_id": 15,
+      "total": 2939.5
+    },
+    {
+      "id": 68,
+      "cliente_id": 88,
+      "total": 1469.75
+    },
+    {
+      "id": 69,
+      "cliente_id": 42,
+      "total": 1721.0099999999998
+    },
+    {
+      "id": 70,
+      "cliente_id": 21,
+      "total": 1125.52
+    },
+    {
+      "id": 71,
+      "cliente_id": 12,
+      "total": 1225.86
+    },
+    {
+      "id": 72,
+      "cliente_id": 29,
+      "total": 1576.88
+    },
+    {
+      "id": 73,
+      "cliente_id": 16,
+      "total": 770.4000000000001
+    },
+    {
+      "id": 74,
+      "cliente_id": 89,
+      "total": 1647.6
+    },
+    {
+      "id": 75,
+      "cliente_id": 12,
+      "total": 3918.3900000000003
+    },
+    {
+      "id": 76,
+      "cliente_id": 9,
+      "total": 2939.5
+    },
+    {
+      "id": 77,
+      "cliente_id": 19,
+      "total": 1356.25
+    },
+    {
+      "id": 78,
+      "cliente_id": 64,
+      "total": 943.92
+    },
+    {
+      "id": 79,
+      "cliente_id": 95,
+      "total": 486.82
+    },
+    {
+      "id": 80,
+      "cliente_id": 18,
+      "total": 2471.3999999999996
+    },
+    {
+      "id": 81,
+      "cliente_id": 60,
+      "total": 612.93
+    },
+    {
+      "id": 82,
+      "cliente_id": 84,
+      "total": 367.69
+    },
+    {
+      "id": 83,
+      "cliente_id": 5,
+      "total": 340.73
+    },
+    {
+      "id": 84,
+      "cliente_id": 4,
+      "total": 3493.74
+    },
+    {
+      "id": 85,
+      "cliente_id": 53,
+      "total": 1164.58
+    },
+    {
+      "id": 86,
+      "cliente_id": 11,
+      "total": 1462.68
+    },
+    {
+      "id": 87,
+      "cliente_id": 36,
+      "total": 2639.58
+    },
+    {
+      "id": 88,
+      "cliente_id": 99,
+      "total": 1483.17
+    },
+    {
+      "id": 89,
+      "cliente_id": 47,
+      "total": 486.82
+    },
+    {
+      "id": 90,
+      "cliente_id": 69,
+      "total": 2329.16
+    },
+    {
+      "id": 91,
+      "cliente_id": 23,
+      "total": 2712.5
+    },
+    {
+      "id": 92,
+      "cliente_id": 13,
+      "total": 580.99
+    },
+    {
+      "id": 93,
+      "cliente_id": 21,
+      "total": 1721.0099999999998
+    },
+    {
+      "id": 94,
+      "cliente_id": 77,
+      "total": 314.64
+    },
+    {
+      "id": 95,
+      "cliente_id": 84,
+      "total": 1469.75
+    },
+    {
+      "id": 96,
+      "cliente_id": 53,
+      "total": 1506.14
+    },
+    {
+      "id": 97,
+      "cliente_id": 31,
+      "total": 562.76
+    },
+    {
+      "id": 98,
+      "cliente_id": 80,
+      "total": 2036.24
+    },
+    {
+      "id": 99,
+      "cliente_id": 21,
+      "total": 2639.58
+    },
+    {
+      "id": 100,
+      "cliente_id": 99,
+      "total": 944.16
+    }
+  ],
+  "detalles_venta": [
+    {
+      "venta_id": 1,
+      "producto_idx": 3,
+      "cantidad": 3,
+      "precio_unitario": 1077.48
+    },
+    {
+      "venta_id": 2,
+      "producto_idx": 1,
+      "cantidad": 2,
+      "precio_unitario": 367.69
+    },
+    {
+      "venta_id": 3,
+      "producto_idx": 22,
+      "cantidad": 1,
+      "precio_unitario": 472.08
+    },
+    {
+      "venta_id": 4,
+      "producto_idx": 2,
+      "cantidad": 3,
+      "precio_unitario": 406.04
+    },
+    {
+      "venta_id": 5,
+      "producto_idx": 25,
+      "cantidad": 1,
+      "precio_unitario": 400.38
+    },
+    {
+      "venta_id": 6,
+      "producto_idx": 39,
+      "cantidad": 1,
+      "precio_unitario": 1319.79
+    },
+    {
+      "venta_id": 7,
+      "producto_idx": 13,
+      "cantidad": 1,
+      "precio_unitario": 256.8
+    },
+    {
+      "venta_id": 8,
+      "producto_idx": 37,
+      "cantidad": 1,
+      "precio_unitario": 472.63
+    },
+    {
+      "venta_id": 9,
+      "producto_idx": 45,
+      "cantidad": 3,
+      "precio_unitario": 1288.16
+    },
+    {
+      "venta_id": 10,
+      "producto_idx": 31,
+      "cantidad": 2,
+      "precio_unitario": 753.07
+    },
+    {
+      "venta_id": 11,
+      "producto_idx": 49,
+      "cantidad": 3,
+      "precio_unitario": 1232.05
+    },
+    {
+      "venta_id": 12,
+      "producto_idx": 7,
+      "cantidad": 2,
+      "precio_unitario": 562.76
+    },
+    {
+      "venta_id": 13,
+      "producto_idx": 13,
+      "cantidad": 2,
+      "precio_unitario": 256.8
+    },
+    {
+      "venta_id": 14,
+      "producto_idx": 37,
+      "cantidad": 3,
+      "precio_unitario": 472.63
+    },
+    {
+      "venta_id": 15,
+      "producto_idx": 40,
+      "cantidad": 3,
+      "precio_unitario": 340.73
+    },
+    {
+      "venta_id": 16,
+      "producto_idx": 37,
+      "cantidad": 2,
+      "precio_unitario": 472.63
+    },
+    {
+      "venta_id": 17,
+      "producto_idx": 40,
+      "cantidad": 3,
+      "precio_unitario": 340.73
+    },
+    {
+      "venta_id": 18,
+      "producto_idx": 28,
+      "cantidad": 2,
+      "precio_unitario": 1389.87
+    },
+    {
+      "venta_id": 19,
+      "producto_idx": 41,
+      "cantidad": 2,
+      "precio_unitario": 788.44
+    },
+    {
+      "venta_id": 20,
+      "producto_idx": 5,
+      "cantidad": 1,
+      "precio_unitario": 1164.58
+    },
+    {
+      "venta_id": 21,
+      "producto_idx": 23,
+      "cantidad": 1,
+      "precio_unitario": 1490.87
+    },
+    {
+      "venta_id": 22,
+      "producto_idx": 18,
+      "cantidad": 3,
+      "precio_unitario": 1018.12
+    },
+    {
+      "venta_id": 23,
+      "producto_idx": 32,
+      "cantidad": 3,
+      "precio_unitario": 1356.25
+    },
+    {
+      "venta_id": 24,
+      "producto_idx": 7,
+      "cantidad": 2,
+      "precio_unitario": 562.76
+    },
+    {
+      "venta_id": 25,
+      "producto_idx": 42,
+      "cantidad": 3,
+      "precio_unitario": 970.44
+    },
+    {
+      "venta_id": 26,
+      "producto_idx": 3,
+      "cantidad": 1,
+      "precio_unitario": 1077.48
+    },
+    {
+      "venta_id": 27,
+      "producto_idx": 34,
+      "cantidad": 3,
+      "precio_unitario": 823.8
+    },
+    {
+      "venta_id": 28,
+      "producto_idx": 46,
+      "cantidad": 2,
+      "precio_unitario": 1458.99
+    },
+    {
+      "venta_id": 29,
+      "producto_idx": 15,
+      "cantidad": 1,
+      "precio_unitario": 1310.21
+    },
+    {
+      "venta_id": 30,
+      "producto_idx": 27,
+      "cantidad": 3,
+      "precio_unitario": 784.44
+    },
+    {
+      "venta_id": 31,
+      "producto_idx": 2,
+      "cantidad": 1,
+      "precio_unitario": 406.04
+    },
+    {
+      "venta_id": 32,
+      "producto_idx": 20,
+      "cantidad": 3,
+      "precio_unitario": 277.37
+    },
+    {
+      "venta_id": 33,
+      "producto_idx": 29,
+      "cantidad": 2,
+      "precio_unitario": 401.7
+    },
+    {
+      "venta_id": 34,
+      "producto_idx": 39,
+      "cantidad": 3,
+      "precio_unitario": 1319.79
+    },
+    {
+      "venta_id": 35,
+      "producto_idx": 48,
+      "cantidad": 2,
+      "precio_unitario": 487.56
+    },
+    {
+      "venta_id": 36,
+      "producto_idx": 5,
+      "cantidad": 3,
+      "precio_unitario": 1164.58
+    },
+    {
+      "venta_id": 37,
+      "producto_idx": 36,
+      "cantidad": 2,
+      "precio_unitario": 1483.17
+    },
+    {
+      "venta_id": 38,
+      "producto_idx": 20,
+      "cantidad": 3,
+      "precio_unitario": 277.37
+    },
+    {
+      "venta_id": 39,
+      "producto_idx": 24,
+      "cantidad": 2,
+      "precio_unitario": 580.99
+    },
+    {
+      "venta_id": 40,
+      "producto_idx": 4,
+      "cantidad": 3,
+      "precio_unitario": 1158.97
+    },
+    {
+      "venta_id": 41,
+      "producto_idx": 35,
+      "cantidad": 2,
+      "precio_unitario": 486.82
+    },
+    {
+      "venta_id": 42,
+      "producto_idx": 5,
+      "cantidad": 2,
+      "precio_unitario": 1164.58
+    },
+    {
+      "venta_id": 43,
+      "producto_idx": 48,
+      "cantidad": 2,
+      "precio_unitario": 487.56
+    },
+    {
+      "venta_id": 44,
+      "producto_idx": 30,
+      "cantidad": 2,
+      "precio_unitario": 766.49
+    },
+    {
+      "venta_id": 45,
+      "producto_idx": 19,
+      "cantidad": 3,
+      "precio_unitario": 970.61
+    },
+    {
+      "venta_id": 46,
+      "producto_idx": 19,
+      "cantidad": 1,
+      "precio_unitario": 970.61
+    },
+    {
+      "venta_id": 47,
+      "producto_idx": 29,
+      "cantidad": 3,
+      "precio_unitario": 401.7
+    },
+    {
+      "venta_id": 48,
+      "producto_idx": 36,
+      "cantidad": 2,
+      "precio_unitario": 1483.17
+    },
+    {
+      "venta_id": 49,
+      "producto_idx": 13,
+      "cantidad": 1,
+      "precio_unitario": 256.8
+    },
+    {
+      "venta_id": 50,
+      "producto_idx": 17,
+      "cantidad": 1,
+      "precio_unitario": 1197.13
+    },
+    {
+      "venta_id": 51,
+      "producto_idx": 31,
+      "cantidad": 3,
+      "precio_unitario": 753.07
+    },
+    {
+      "venta_id": 52,
+      "producto_idx": 37,
+      "cantidad": 1,
+      "precio_unitario": 472.63
+    },
+    {
+      "venta_id": 53,
+      "producto_idx": 37,
+      "cantidad": 3,
+      "precio_unitario": 472.63
+    },
+    {
+      "venta_id": 54,
+      "producto_idx": 23,
+      "cantidad": 2,
+      "precio_unitario": 1490.87
+    },
+    {
+      "venta_id": 55,
+      "producto_idx": 15,
+      "cantidad": 1,
+      "precio_unitario": 1310.21
+    },
+    {
+      "venta_id": 56,
+      "producto_idx": 29,
+      "cantidad": 3,
+      "precio_unitario": 401.7
+    },
+    {
+      "venta_id": 57,
+      "producto_idx": 42,
+      "cantidad": 2,
+      "precio_unitario": 970.44
+    },
+    {
+      "venta_id": 58,
+      "producto_idx": 44,
+      "cantidad": 3,
+      "precio_unitario": 801.84
+    },
+    {
+      "venta_id": 59,
+      "producto_idx": 40,
+      "cantidad": 2,
+      "precio_unitario": 340.73
+    },
+    {
+      "venta_id": 60,
+      "producto_idx": 42,
+      "cantidad": 2,
+      "precio_unitario": 970.44
+    },
+    {
+      "venta_id": 61,
+      "producto_idx": 41,
+      "cantidad": 3,
+      "precio_unitario": 788.44
+    },
+    {
+      "venta_id": 62,
+      "producto_idx": 25,
+      "cantidad": 2,
+      "precio_unitario": 400.38
+    },
+    {
+      "venta_id": 63,
+      "producto_idx": 21,
+      "cantidad": 3,
+      "precio_unitario": 1199.93
+    },
+    {
+      "venta_id": 64,
+      "producto_idx": 17,
+      "cantidad": 3,
+      "precio_unitario": 1197.13
+    },
+    {
+      "venta_id": 65,
+      "producto_idx": 18,
+      "cantidad": 1,
+      "precio_unitario": 1018.12
+    },
+    {
+      "venta_id": 66,
+      "producto_idx": 3,
+      "cantidad": 3,
+      "precio_unitario": 1077.48
+    },
+    {
+      "venta_id": 67,
+      "producto_idx": 8,
+      "cantidad": 2,
+      "precio_unitario": 1469.75
+    },
+    {
+      "venta_id": 68,
+      "producto_idx": 8,
+      "cantidad": 1,
+      "precio_unitario": 1469.75
+    },
+    {
+      "venta_id": 69,
+      "producto_idx": 33,
+      "cantidad": 3,
+      "precio_unitario": 573.67
+    },
+    {
+      "venta_id": 70,
+      "producto_idx": 7,
+      "cantidad": 2,
+      "precio_unitario": 562.76
+    },
+    {
+      "venta_id": 71,
+      "producto_idx": 11,
+      "cantidad": 2,
+      "precio_unitario": 612.93
+    },
+    {
+      "venta_id": 72,
+      "producto_idx": 41,
+      "cantidad": 2,
+      "precio_unitario": 788.44
+    },
+    {
+      "venta_id": 73,
+      "producto_idx": 13,
+      "cantidad": 3,
+      "precio_unitario": 256.8
+    },
+    {
+      "venta_id": 74,
+      "producto_idx": 34,
+      "cantidad": 2,
+      "precio_unitario": 823.8
+    },
+    {
+      "venta_id": 75,
+      "producto_idx": 38,
+      "cantidad": 3,
+      "precio_unitario": 1306.13
+    },
+    {
+      "venta_id": 76,
+      "producto_idx": 8,
+      "cantidad": 2,
+      "precio_unitario": 1469.75
+    },
+    {
+      "venta_id": 77,
+      "producto_idx": 32,
+      "cantidad": 1,
+      "precio_unitario": 1356.25
+    },
+    {
+      "venta_id": 78,
+      "producto_idx": 16,
+      "cantidad": 3,
+      "precio_unitario": 314.64
+    },
+    {
+      "venta_id": 79,
+      "producto_idx": 35,
+      "cantidad": 1,
+      "precio_unitario": 486.82
+    },
+    {
+      "venta_id": 80,
+      "producto_idx": 34,
+      "cantidad": 3,
+      "precio_unitario": 823.8
+    },
+    {
+      "venta_id": 81,
+      "producto_idx": 11,
+      "cantidad": 1,
+      "precio_unitario": 612.93
+    },
+    {
+      "venta_id": 82,
+      "producto_idx": 1,
+      "cantidad": 1,
+      "precio_unitario": 367.69
+    },
+    {
+      "venta_id": 83,
+      "producto_idx": 40,
+      "cantidad": 1,
+      "precio_unitario": 340.73
+    },
+    {
+      "venta_id": 84,
+      "producto_idx": 5,
+      "cantidad": 3,
+      "precio_unitario": 1164.58
+    },
+    {
+      "venta_id": 85,
+      "producto_idx": 5,
+      "cantidad": 1,
+      "precio_unitario": 1164.58
+    },
+    {
+      "venta_id": 86,
+      "producto_idx": 48,
+      "cantidad": 3,
+      "precio_unitario": 487.56
+    },
+    {
+      "venta_id": 87,
+      "producto_idx": 39,
+      "cantidad": 2,
+      "precio_unitario": 1319.79
+    },
+    {
+      "venta_id": 88,
+      "producto_idx": 36,
+      "cantidad": 1,
+      "precio_unitario": 1483.17
+    },
+    {
+      "venta_id": 89,
+      "producto_idx": 35,
+      "cantidad": 1,
+      "precio_unitario": 486.82
+    },
+    {
+      "venta_id": 90,
+      "producto_idx": 5,
+      "cantidad": 2,
+      "precio_unitario": 1164.58
+    },
+    {
+      "venta_id": 91,
+      "producto_idx": 32,
+      "cantidad": 2,
+      "precio_unitario": 1356.25
+    },
+    {
+      "venta_id": 92,
+      "producto_idx": 24,
+      "cantidad": 1,
+      "precio_unitario": 580.99
+    },
+    {
+      "venta_id": 93,
+      "producto_idx": 33,
+      "cantidad": 3,
+      "precio_unitario": 573.67
+    },
+    {
+      "venta_id": 94,
+      "producto_idx": 16,
+      "cantidad": 1,
+      "precio_unitario": 314.64
+    },
+    {
+      "venta_id": 95,
+      "producto_idx": 8,
+      "cantidad": 1,
+      "precio_unitario": 1469.75
+    },
+    {
+      "venta_id": 96,
+      "producto_idx": 31,
+      "cantidad": 2,
+      "precio_unitario": 753.07
+    },
+    {
+      "venta_id": 97,
+      "producto_idx": 7,
+      "cantidad": 1,
+      "precio_unitario": 562.76
+    },
+    {
+      "venta_id": 98,
+      "producto_idx": 18,
+      "cantidad": 2,
+      "precio_unitario": 1018.12
+    },
+    {
+      "venta_id": 99,
+      "producto_idx": 39,
+      "cantidad": 2,
+      "precio_unitario": 1319.79
+    },
+    {
+      "venta_id": 100,
+      "producto_idx": 22,
+      "cantidad": 2,
+      "precio_unitario": 472.08
+    }
+  ],
+  "inventarios": [
+    {
+      "producto_idx": 29,
+      "cantidad": 8,
+      "fecha_vencimiento": "2026-05-25T23:01:57.070393"
+    },
+    {
+      "producto_idx": 1,
+      "cantidad": 13,
+      "fecha_vencimiento": "2026-09-10T23:01:57.082772"
+    },
+    {
+      "producto_idx": 27,
+      "cantidad": 18,
+      "fecha_vencimiento": "2027-01-26T23:01:57.082967"
+    },
+    {
+      "producto_idx": 19,
+      "cantidad": 18,
+      "fecha_vencimiento": "2026-09-04T23:01:57.083114"
+    },
+    {
+      "producto_idx": 1,
+      "cantidad": 19,
+      "fecha_vencimiento": "2027-02-28T23:01:57.083302"
+    },
+    {
+      "producto_idx": 48,
+      "cantidad": 20,
+      "fecha_vencimiento": "2026-06-07T23:01:57.083441"
+    },
+    {
+      "producto_idx": 33,
+      "cantidad": 18,
+      "fecha_vencimiento": "2026-08-20T23:01:57.083557"
+    },
+    {
+      "producto_idx": 23,
+      "cantidad": 14,
+      "fecha_vencimiento": "2026-06-09T23:01:57.083695"
+    },
+    {
+      "producto_idx": 0,
+      "cantidad": 15,
+      "fecha_vencimiento": "2027-02-22T23:01:57.083869"
+    },
+    {
+      "producto_idx": 30,
+      "cantidad": 18,
+      "fecha_vencimiento": "2026-03-25T23:01:57.084043"
+    },
+    {
+      "producto_idx": 5,
+      "cantidad": 13,
+      "fecha_vencimiento": "2026-12-04T23:01:57.084168"
+    },
+    {
+      "producto_idx": 2,
+      "cantidad": 12,
+      "fecha_vencimiento": "2026-04-12T23:01:57.084269"
+    },
+    {
+      "producto_idx": 44,
+      "cantidad": 16,
+      "fecha_vencimiento": "2026-01-10T23:01:57.084377"
+    },
+    {
+      "producto_idx": 44,
+      "cantidad": 16,
+      "fecha_vencimiento": "2027-01-18T23:01:57.084511"
+    },
+    {
+      "producto_idx": 10,
+      "cantidad": 13,
+      "fecha_vencimiento": "2026-10-27T23:01:57.084609"
+    },
+    {
+      "producto_idx": 38,
+      "cantidad": 17,
+      "fecha_vencimiento": "2026-05-03T23:01:57.084764"
+    },
+    {
+      "producto_idx": 17,
+      "cantidad": 16,
+      "fecha_vencimiento": "2026-08-23T23:01:57.084900"
+    },
+    {
+      "producto_idx": 12,
+      "cantidad": 17,
+      "fecha_vencimiento": "2026-02-23T23:01:57.085028"
+    },
+    {
+      "producto_idx": 0,
+      "cantidad": 8,
+      "fecha_vencimiento": "2025-12-08T23:01:57.085160"
+    },
+    {
+      "producto_idx": 3,
+      "cantidad": 6,
+      "fecha_vencimiento": "2027-01-03T23:01:57.085264"
+    },
+    {
+      "producto_idx": 5,
+      "cantidad": 17,
+      "fecha_vencimiento": "2025-12-22T23:01:57.085414"
+    },
+    {
+      "producto_idx": 11,
+      "cantidad": 10,
+      "fecha_vencimiento": "2026-06-10T23:01:57.085572"
+    },
+    {
+      "producto_idx": 46,
+      "cantidad": 19,
+      "fecha_vencimiento": "2026-09-17T23:01:57.085742"
+    },
+    {
+      "producto_idx": 13,
+      "cantidad": 12,
+      "fecha_vencimiento": "2025-12-13T23:01:57.085855"
+    },
+    {
+      "producto_idx": 45,
+      "cantidad": 10,
+      "fecha_vencimiento": "2026-05-11T23:01:57.086002"
+    },
+    {
+      "producto_idx": 20,
+      "cantidad": 9,
+      "fecha_vencimiento": "2026-10-23T23:01:57.086120"
+    },
+    {
+      "producto_idx": 15,
+      "cantidad": 7,
+      "fecha_vencimiento": "2027-03-26T23:01:57.086234"
+    },
+    {
+      "producto_idx": 40,
+      "cantidad": 11,
+      "fecha_vencimiento": "2027-03-07T23:01:57.086389"
+    },
+    {
+      "producto_idx": 49,
+      "cantidad": 19,
+      "fecha_vencimiento": "2026-11-14T23:01:57.086544"
+    },
+    {
+      "producto_idx": 1,
+      "cantidad": 6,
+      "fecha_vencimiento": "2026-07-17T23:01:57.086682"
+    },
+    {
+      "producto_idx": 15,
+      "cantidad": 15,
+      "fecha_vencimiento": "2025-12-13T23:01:57.086798"
+    },
+    {
+      "producto_idx": 29,
+      "cantidad": 7,
+      "fecha_vencimiento": "2026-03-25T23:01:57.086898"
+    },
+    {
+      "producto_idx": 0,
+      "cantidad": 20,
+      "fecha_vencimiento": "2026-03-24T23:01:57.087251"
+    },
+    {
+      "producto_idx": 5,
+      "cantidad": 14,
+      "fecha_vencimiento": "2027-03-07T23:01:57.087372"
+    },
+    {
+      "producto_idx": 34,
+      "cantidad": 14,
+      "fecha_vencimiento": "2026-08-14T23:01:57.087471"
+    },
+    {
+      "producto_idx": 45,
+      "cantidad": 15,
+      "fecha_vencimiento": "2026-04-21T23:01:57.087569"
+    },
+    {
+      "producto_idx": 40,
+      "cantidad": 9,
+      "fecha_vencimiento": "2027-03-11T23:01:57.087663"
+    },
+    {
+      "producto_idx": 10,
+      "cantidad": 5,
+      "fecha_vencimiento": "2026-12-31T23:01:57.087776"
+    },
+    {
+      "producto_idx": 37,
+      "cantidad": 13,
+      "fecha_vencimiento": "2026-12-02T23:01:57.087876"
+    },
+    {
+      "producto_idx": 18,
+      "cantidad": 8,
+      "fecha_vencimiento": "2025-12-08T23:01:57.088024"
+    },
+    {
+      "producto_idx": 3,
+      "cantidad": 20,
+      "fecha_vencimiento": "2027-01-20T23:01:57.088182"
+    },
+    {
+      "producto_idx": 44,
+      "cantidad": 12,
+      "fecha_vencimiento": "2026-04-30T23:01:57.088350"
+    },
+    {
+      "producto_idx": 44,
+      "cantidad": 19,
+      "fecha_vencimiento": "2026-05-19T23:01:57.088521"
+    },
+    {
+      "producto_idx": 11,
+      "cantidad": 14,
+      "fecha_vencimiento": "2027-03-27T23:01:57.088691"
+    },
+    {
+      "producto_idx": 3,
+      "cantidad": 7,
+      "fecha_vencimiento": "2026-01-30T23:01:57.088858"
+    },
+    {
+      "producto_idx": 19,
+      "cantidad": 13,
+      "fecha_vencimiento": "2026-05-21T23:01:57.089012"
+    },
+    {
+      "producto_idx": 33,
+      "cantidad": 14,
+      "fecha_vencimiento": "2026-08-06T23:01:57.089170"
+    },
+    {
+      "producto_idx": 12,
+      "cantidad": 8,
+      "fecha_vencimiento": "2027-01-08T23:01:57.089323"
+    },
+    {
+      "producto_idx": 35,
+      "cantidad": 17,
+      "fecha_vencimiento": "2026-02-06T23:01:57.089457"
+    },
+    {
+      "producto_idx": 29,
+      "cantidad": 10,
+      "fecha_vencimiento": "2025-12-08T23:01:57.089593"
+    }
+  ],
+  "bitacoras": [
+    {
+      "usuario": 15,
+      "fecha": "2024-08-15",
+      "accion": "Id saepe aspernatur.",
+      "ip": "213.82.102.80"
+    },
+    {
+      "usuario": 66,
+      "fecha": "2024-07-21",
+      "accion": "Quis ex.",
+      "ip": "150.163.11.12"
+    },
+    {
+      "usuario": 71,
+      "fecha": "2024-08-22",
+      "accion": "Totam eveniet ea ea.",
+      "ip": "128.242.107.138"
+    },
+    {
+      "usuario": 6,
+      "fecha": "2024-07-15",
+      "accion": "Veritatis earum earum fugiat.",
+      "ip": "129.188.144.11"
+    },
+    {
+      "usuario": 50,
+      "fecha": "2024-09-10",
+      "accion": "Explicabo ipsum.",
+      "ip": "12.233.236.242"
+    },
+    {
+      "usuario": 48,
+      "fecha": "2024-10-04",
+      "accion": "Commodi iusto natus totam.",
+      "ip": "171.137.7.186"
+    },
+    {
+      "usuario": 31,
+      "fecha": "2024-11-04",
+      "accion": "Placeat ratione laborum.",
+      "ip": "156.13.133.140"
+    },
+    {
+      "usuario": 49,
+      "fecha": "2024-07-09",
+      "accion": "Nostrum maiores dolores.",
+      "ip": "105.226.193.106"
+    },
+    {
+      "usuario": 94,
+      "fecha": "2025-03-17",
+      "accion": "Cupiditate tempore cumque.",
+      "ip": "84.169.20.210"
+    },
+    {
+      "usuario": 42,
+      "fecha": "2024-04-30",
+      "accion": "Eum autem officia reprehenderit neque.",
+      "ip": "75.27.73.145"
+    },
+    {
+      "usuario": 46,
+      "fecha": "2024-05-14",
+      "accion": "Aliquam vitae dolor cupiditate.",
+      "ip": "81.8.145.170"
+    },
+    {
+      "usuario": 38,
+      "fecha": "2025-03-16",
+      "accion": "Neque delectus ea.",
+      "ip": "194.28.165.28"
+    },
+    {
+      "usuario": 35,
+      "fecha": "2025-03-24",
+      "accion": "Id vitae iste dolorem.",
+      "ip": "208.72.56.202"
+    },
+    {
+      "usuario": 32,
+      "fecha": "2024-08-05",
+      "accion": "Laboriosam accusantium.",
+      "ip": "186.78.221.19"
+    },
+    {
+      "usuario": 11,
+      "fecha": "2024-05-21",
+      "accion": "Totam sed voluptas.",
+      "ip": "8.150.71.0"
+    },
+    {
+      "usuario": 53,
+      "fecha": "2025-02-15",
+      "accion": "Quaerat commodi sed.",
+      "ip": "3.128.156.104"
+    },
+    {
+      "usuario": 7,
+      "fecha": "2025-01-16",
+      "accion": "Magnam et natus in.",
+      "ip": "139.48.11.47"
+    },
+    {
+      "usuario": 43,
+      "fecha": "2024-05-09",
+      "accion": "Pariatur quis sed numquam.",
+      "ip": "5.141.152.141"
+    },
+    {
+      "usuario": 60,
+      "fecha": "2024-11-14",
+      "accion": "Nemo recusandae excepturi unde rerum.",
+      "ip": "82.141.157.5"
+    },
+    {
+      "usuario": 93,
+      "fecha": "2024-06-23",
+      "accion": "Dicta deleniti reiciendis.",
+      "ip": "19.209.73.127"
+    },
+    {
+      "usuario": 23,
+      "fecha": "2024-05-04",
+      "accion": "Nostrum saepe explicabo vel atque.",
+      "ip": "190.244.46.23"
+    },
+    {
+      "usuario": 55,
+      "fecha": "2024-07-11",
+      "accion": "Harum occaecati consequuntur.",
+      "ip": "58.168.70.48"
+    },
+    {
+      "usuario": 97,
+      "fecha": "2024-08-11",
+      "accion": "Qui fugiat odio.",
+      "ip": "156.163.214.32"
+    },
+    {
+      "usuario": 61,
+      "fecha": "2024-12-03",
+      "accion": "Veniam quaerat debitis.",
+      "ip": "149.105.113.134"
+    },
+    {
+      "usuario": 90,
+      "fecha": "2025-04-10",
+      "accion": "Consequuntur sint quibusdam.",
+      "ip": "22.110.71.193"
+    },
+    {
+      "usuario": 45,
+      "fecha": "2024-08-23",
+      "accion": "Amet assumenda quis vel.",
+      "ip": "112.37.25.212"
+    },
+    {
+      "usuario": 8,
+      "fecha": "2025-04-03",
+      "accion": "Iure laboriosam culpa.",
+      "ip": "184.208.164.67"
+    },
+    {
+      "usuario": 91,
+      "fecha": "2024-09-13",
+      "accion": "Enim dolorum cupiditate.",
+      "ip": "191.183.49.113"
+    },
+    {
+      "usuario": 3,
+      "fecha": "2024-09-26",
+      "accion": "Quasi minus nobis.",
+      "ip": "95.242.74.225"
+    },
+    {
+      "usuario": 36,
+      "fecha": "2024-10-24",
+      "accion": "Voluptatibus magni sit.",
+      "ip": "156.175.144.76"
+    },
+    {
+      "usuario": 74,
+      "fecha": "2024-07-27",
+      "accion": "Tempore sit quibusdam at.",
+      "ip": "200.47.125.3"
+    },
+    {
+      "usuario": 17,
+      "fecha": "2025-01-24",
+      "accion": "Pariatur vitae.",
+      "ip": "152.1.51.146"
+    },
+    {
+      "usuario": 91,
+      "fecha": "2024-10-27",
+      "accion": "Maiores pariatur quia.",
+      "ip": "6.5.226.202"
+    },
+    {
+      "usuario": 27,
+      "fecha": "2025-03-14",
+      "accion": "Recusandae est.",
+      "ip": "39.184.16.191"
+    },
+    {
+      "usuario": 26,
+      "fecha": "2025-04-07",
+      "accion": "Illum dicta molestiae.",
+      "ip": "76.55.204.45"
+    },
+    {
+      "usuario": 62,
+      "fecha": "2024-04-27",
+      "accion": "Tempore tempore dolore beatae.",
+      "ip": "62.0.244.11"
+    },
+    {
+      "usuario": 100,
+      "fecha": "2024-07-25",
+      "accion": "Exercitationem ad non pariatur.",
+      "ip": "192.201.179.67"
+    },
+    {
+      "usuario": 99,
+      "fecha": "2024-08-22",
+      "accion": "Aperiam numquam hic modi rerum.",
+      "ip": "215.171.204.90"
+    },
+    {
+      "usuario": 31,
+      "fecha": "2025-04-17",
+      "accion": "Provident nobis error maiores laudantium.",
+      "ip": "104.245.28.98"
+    },
+    {
+      "usuario": 78,
+      "fecha": "2025-01-03",
+      "accion": "Voluptate alias nemo perspiciatis debitis.",
+      "ip": "114.222.185.146"
+    },
+    {
+      "usuario": 82,
+      "fecha": "2024-05-18",
+      "accion": "Quia dicta sunt corporis ipsa.",
+      "ip": "187.134.63.143"
+    },
+    {
+      "usuario": 97,
+      "fecha": "2024-10-16",
+      "accion": "Expedita eius neque ipsa odit.",
+      "ip": "100.191.174.249"
+    },
+    {
+      "usuario": 72,
+      "fecha": "2024-12-28",
+      "accion": "Illum vero accusamus.",
+      "ip": "90.96.12.83"
+    },
+    {
+      "usuario": 4,
+      "fecha": "2024-09-03",
+      "accion": "Deserunt quos.",
+      "ip": "162.5.96.196"
+    },
+    {
+      "usuario": 37,
+      "fecha": "2024-05-20",
+      "accion": "Quidem deleniti quod qui.",
+      "ip": "175.190.139.131"
+    },
+    {
+      "usuario": 19,
+      "fecha": "2024-07-29",
+      "accion": "Nam velit ducimus illo.",
+      "ip": "13.243.36.112"
+    },
+    {
+      "usuario": 63,
+      "fecha": "2025-01-29",
+      "accion": "Neque consequatur corrupti.",
+      "ip": "213.220.103.178"
+    },
+    {
+      "usuario": 54,
+      "fecha": "2024-06-29",
+      "accion": "Porro totam.",
+      "ip": "220.32.104.117"
+    },
+    {
+      "usuario": 4,
+      "fecha": "2024-05-16",
+      "accion": "Deserunt sapiente.",
+      "ip": "160.233.154.77"
+    },
+    {
+      "usuario": 5,
+      "fecha": "2024-06-10",
+      "accion": "Fugiat facere necessitatibus doloremque eos.",
+      "ip": "34.141.225.158"
+    }
+  ],
+  "notas_devolucion": [
+    {
+      "cliente_id": 41,
+      "fecha": "2024-07-19"
+    },
+    {
+      "cliente_id": 51,
+      "fecha": "2024-11-29"
+    },
+    {
+      "cliente_id": 85,
+      "fecha": "2024-08-26"
+    },
+    {
+      "cliente_id": 21,
+      "fecha": "2024-11-27"
+    },
+    {
+      "cliente_id": 68,
+      "fecha": "2024-07-04"
+    },
+    {
+      "cliente_id": 79,
+      "fecha": "2024-09-02"
+    },
+    {
+      "cliente_id": 3,
+      "fecha": "2024-06-09"
+    },
+    {
+      "cliente_id": 7,
+      "fecha": "2025-01-21"
+    },
+    {
+      "cliente_id": 63,
+      "fecha": "2025-01-07"
+    },
+    {
+      "cliente_id": 32,
+      "fecha": "2024-08-02"
+    },
+    {
+      "cliente_id": 100,
+      "fecha": "2024-09-09"
+    },
+    {
+      "cliente_id": 82,
+      "fecha": "2025-02-10"
+    },
+    {
+      "cliente_id": 83,
+      "fecha": "2024-08-15"
+    },
+    {
+      "cliente_id": 77,
+      "fecha": "2024-09-21"
+    },
+    {
+      "cliente_id": 34,
+      "fecha": "2025-03-24"
+    },
+    {
+      "cliente_id": 46,
+      "fecha": "2024-08-01"
+    },
+    {
+      "cliente_id": 72,
+      "fecha": "2024-06-09"
+    },
+    {
+      "cliente_id": 73,
+      "fecha": "2024-10-30"
+    },
+    {
+      "cliente_id": 96,
+      "fecha": "2024-10-04"
+    },
+    {
+      "cliente_id": 12,
+      "fecha": "2024-09-11"
+    },
+    {
+      "cliente_id": 89,
+      "fecha": "2025-01-26"
+    },
+    {
+      "cliente_id": 83,
+      "fecha": "2024-06-03"
+    },
+    {
+      "cliente_id": 49,
+      "fecha": "2025-03-30"
+    },
+    {
+      "cliente_id": 27,
+      "fecha": "2024-11-19"
+    },
+    {
+      "cliente_id": 49,
+      "fecha": "2024-10-30"
+    },
+    {
+      "cliente_id": 21,
+      "fecha": "2024-10-13"
+    },
+    {
+      "cliente_id": 66,
+      "fecha": "2024-08-29"
+    },
+    {
+      "cliente_id": 73,
+      "fecha": "2024-05-15"
+    },
+    {
+      "cliente_id": 80,
+      "fecha": "2024-12-22"
+    },
+    {
+      "cliente_id": 26,
+      "fecha": "2024-10-05"
+    },
+    {
+      "cliente_id": 64,
+      "fecha": "2024-11-13"
+    },
+    {
+      "cliente_id": 94,
+      "fecha": "2025-01-27"
+    },
+    {
+      "cliente_id": 6,
+      "fecha": "2024-11-01"
+    },
+    {
+      "cliente_id": 52,
+      "fecha": "2024-06-24"
+    },
+    {
+      "cliente_id": 75,
+      "fecha": "2024-04-26"
+    },
+    {
+      "cliente_id": 40,
+      "fecha": "2024-07-03"
+    },
+    {
+      "cliente_id": 7,
+      "fecha": "2025-04-17"
+    },
+    {
+      "cliente_id": 16,
+      "fecha": "2025-02-26"
+    },
+    {
+      "cliente_id": 73,
+      "fecha": "2024-12-22"
+    },
+    {
+      "cliente_id": 87,
+      "fecha": "2025-04-13"
+    },
+    {
+      "cliente_id": 31,
+      "fecha": "2024-06-24"
+    },
+    {
+      "cliente_id": 74,
+      "fecha": "2024-04-22"
+    },
+    {
+      "cliente_id": 50,
+      "fecha": "2024-12-03"
+    },
+    {
+      "cliente_id": 34,
+      "fecha": "2025-02-17"
+    },
+    {
+      "cliente_id": 61,
+      "fecha": "2024-12-22"
+    },
+    {
+      "cliente_id": 38,
+      "fecha": "2024-04-28"
+    },
+    {
+      "cliente_id": 21,
+      "fecha": "2024-11-08"
+    },
+    {
+      "cliente_id": 75,
+      "fecha": "2024-07-19"
+    },
+    {
+      "cliente_id": 25,
+      "fecha": "2024-10-25"
+    },
+    {
+      "cliente_id": 35,
+      "fecha": "2025-01-17"
+    }
+  ],
+  "detalles_devolucion": [
+    {
+      "producto_idx": 29,
+      "cantidad": 3,
+      "cliente_id": 41,
+      "devolucion_id": 1
+    },
+    {
+      "producto_idx": 1,
+      "cantidad": 1,
+      "cliente_id": 51,
+      "devolucion_id": 2
+    },
+    {
+      "producto_idx": 27,
+      "cantidad": 2,
+      "cliente_id": 85,
+      "devolucion_id": 3
+    },
+    {
+      "producto_idx": 19,
+      "cantidad": 1,
+      "cliente_id": 21,
+      "devolucion_id": 4
+    },
+    {
+      "producto_idx": 1,
+      "cantidad": 3,
+      "cliente_id": 68,
+      "devolucion_id": 5
+    },
+    {
+      "producto_idx": 48,
+      "cantidad": 3,
+      "cliente_id": 79,
+      "devolucion_id": 6
+    },
+    {
+      "producto_idx": 33,
+      "cantidad": 1,
+      "cliente_id": 3,
+      "devolucion_id": 7
+    },
+    {
+      "producto_idx": 23,
+      "cantidad": 1,
+      "cliente_id": 7,
+      "devolucion_id": 8
+    },
+    {
+      "producto_idx": 0,
+      "cantidad": 3,
+      "cliente_id": 63,
+      "devolucion_id": 9
+    },
+    {
+      "producto_idx": 30,
+      "cantidad": 2,
+      "cliente_id": 32,
+      "devolucion_id": 10
+    },
+    {
+      "producto_idx": 5,
+      "cantidad": 3,
+      "cliente_id": 100,
+      "devolucion_id": 11
+    },
+    {
+      "producto_idx": 2,
+      "cantidad": 2,
+      "cliente_id": 82,
+      "devolucion_id": 12
+    },
+    {
+      "producto_idx": 44,
+      "cantidad": 3,
+      "cliente_id": 83,
+      "devolucion_id": 13
+    },
+    {
+      "producto_idx": 44,
+      "cantidad": 2,
+      "cliente_id": 77,
+      "devolucion_id": 14
+    },
+    {
+      "producto_idx": 10,
+      "cantidad": 1,
+      "cliente_id": 34,
+      "devolucion_id": 15
+    },
+    {
+      "producto_idx": 38,
+      "cantidad": 2,
+      "cliente_id": 46,
+      "devolucion_id": 16
+    },
+    {
+      "producto_idx": 17,
+      "cantidad": 2,
+      "cliente_id": 72,
+      "devolucion_id": 17
+    },
+    {
+      "producto_idx": 12,
+      "cantidad": 3,
+      "cliente_id": 73,
+      "devolucion_id": 18
+    },
+    {
+      "producto_idx": 0,
+      "cantidad": 1,
+      "cliente_id": 96,
+      "devolucion_id": 19
+    },
+    {
+      "producto_idx": 3,
+      "cantidad": 3,
+      "cliente_id": 12,
+      "devolucion_id": 20
+    },
+    {
+      "producto_idx": 5,
+      "cantidad": 2,
+      "cliente_id": 89,
+      "devolucion_id": 21
+    },
+    {
+      "producto_idx": 11,
+      "cantidad": 1,
+      "cliente_id": 83,
+      "devolucion_id": 22
+    },
+    {
+      "producto_idx": 46,
+      "cantidad": 2,
+      "cliente_id": 49,
+      "devolucion_id": 23
+    },
+    {
+      "producto_idx": 13,
+      "cantidad": 1,
+      "cliente_id": 27,
+      "devolucion_id": 24
+    },
+    {
+      "producto_idx": 45,
+      "cantidad": 3,
+      "cliente_id": 49,
+      "devolucion_id": 25
+    },
+    {
+      "producto_idx": 20,
+      "cantidad": 3,
+      "cliente_id": 21,
+      "devolucion_id": 26
+    },
+    {
+      "producto_idx": 15,
+      "cantidad": 2,
+      "cliente_id": 66,
+      "devolucion_id": 27
+    },
+    {
+      "producto_idx": 40,
+      "cantidad": 1,
+      "cliente_id": 73,
+      "devolucion_id": 28
+    },
+    {
+      "producto_idx": 49,
+      "cantidad": 1,
+      "cliente_id": 80,
+      "devolucion_id": 29
+    },
+    {
+      "producto_idx": 1,
+      "cantidad": 3,
+      "cliente_id": 26,
+      "devolucion_id": 30
+    },
+    {
+      "producto_idx": 15,
+      "cantidad": 3,
+      "cliente_id": 64,
+      "devolucion_id": 31
+    },
+    {
+      "producto_idx": 29,
+      "cantidad": 2,
+      "cliente_id": 94,
+      "devolucion_id": 32
+    },
+    {
+      "producto_idx": 0,
+      "cantidad": 1,
+      "cliente_id": 6,
+      "devolucion_id": 33
+    },
+    {
+      "producto_idx": 5,
+      "cantidad": 3,
+      "cliente_id": 52,
+      "devolucion_id": 34
+    },
+    {
+      "producto_idx": 34,
+      "cantidad": 3,
+      "cliente_id": 75,
+      "devolucion_id": 35
+    },
+    {
+      "producto_idx": 45,
+      "cantidad": 1,
+      "cliente_id": 40,
+      "devolucion_id": 36
+    },
+    {
+      "producto_idx": 40,
+      "cantidad": 2,
+      "cliente_id": 7,
+      "devolucion_id": 37
+    },
+    {
+      "producto_idx": 10,
+      "cantidad": 1,
+      "cliente_id": 16,
+      "devolucion_id": 38
+    },
+    {
+      "producto_idx": 37,
+      "cantidad": 3,
+      "cliente_id": 73,
+      "devolucion_id": 39
+    },
+    {
+      "producto_idx": 18,
+      "cantidad": 2,
+      "cliente_id": 87,
+      "devolucion_id": 40
+    },
+    {
+      "producto_idx": 3,
+      "cantidad": 1,
+      "cliente_id": 31,
+      "devolucion_id": 41
+    },
+    {
+      "producto_idx": 44,
+      "cantidad": 1,
+      "cliente_id": 74,
+      "devolucion_id": 42
+    },
+    {
+      "producto_idx": 44,
+      "cantidad": 3,
+      "cliente_id": 50,
+      "devolucion_id": 43
+    },
+    {
+      "producto_idx": 11,
+      "cantidad": 1,
+      "cliente_id": 34,
+      "devolucion_id": 44
+    },
+    {
+      "producto_idx": 3,
+      "cantidad": 1,
+      "cliente_id": 61,
+      "devolucion_id": 45
+    },
+    {
+      "producto_idx": 19,
+      "cantidad": 1,
+      "cliente_id": 38,
+      "devolucion_id": 46
+    },
+    {
+      "producto_idx": 33,
+      "cantidad": 1,
+      "cliente_id": 21,
+      "devolucion_id": 47
+    },
+    {
+      "producto_idx": 12,
+      "cantidad": 3,
+      "cliente_id": 75,
+      "devolucion_id": 48
+    },
+    {
+      "producto_idx": 35,
+      "cantidad": 2,
+      "cliente_id": 25,
+      "devolucion_id": 49
+    },
+    {
+      "producto_idx": 29,
+      "cantidad": 1,
+      "cliente_id": 35,
+      "devolucion_id": 50
+    }
+  ]
+}

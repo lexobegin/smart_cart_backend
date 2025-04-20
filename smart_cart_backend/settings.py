@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'core',
     'rest_framework_simplejwt',
+    
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -82,7 +84,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'smartcart_db',
         'USER': 'postgres',
-        'PASSWORD': '12345',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
         'PORT': '5432',
         'OPTIONS': {
