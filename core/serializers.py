@@ -23,10 +23,39 @@ class ClienteRegisterSerializer(serializers.ModelSerializer):
         )
         return user
 
+# serializacion Categoria
+class CategoriaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Categoria
+        fields = ['id', 'nombre', 'descripcion']
+
+class AtributoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Atributo
+        fields = ['id', 'nombre']
+
 class ProductoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Producto
         fields = '__all__'
+
+class ProductoAtributoSerializer(serializers.ModelSerializer):
+    producto = ProductoSerializer()
+    atributo = AtributoSerializer()
+
+    class Meta:
+        model = ProductoAtributo
+        fields = ['id','producto', 'atributo', 'valor']
+
+class ProductoListSerializer(serializers.ModelSerializer):
+    categoria = CategoriaSerializer(source='categoria_id')  # Relación con la categoría
+    atributos = ProductoAtributoSerializer(many=True, read_only=True)  # Relación con ProductoAtributo para acceder a Atributo
+    # También podemos incluir atributos directamente como un ManyToMany, si es necesario.
+    # atributos = AtributoSerializer(many=True, read_only=True)  # Si no quieres detalles adicionales de ProductoAtributo
+    class Meta:
+        model = Producto
+        fields = ['id', 'nombre', 'descripcion', 'precio', 'stock', 'categoria', 'atributos']
+
 
 class ClienteSerializer(serializers.ModelSerializer):
     # Aquí no es necesario hacer cambios porque el modelo Cliente ya no se usa.
@@ -61,19 +90,13 @@ class VentaSerializer(serializers.ModelSerializer):
             DetalleVenta.objects.create(venta=venta, **detalle_data)
         return venta
 
-# serializacion Categoria
-class CategoriaSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Categoria
-        fields = ['id', 'nombre', 'descripcion']
-        
 # serializacion Bitacora
 class BitacoraSerializer(serializers.ModelSerializer):
     class Meta:
         model = Bitacora
         fields = ['id', 'usuario_id', 'accion', 'fecha']
- 
-# serializacion Descuento       
+
+# serializacion Descuento
 class DescuentoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Descuento
@@ -98,20 +121,7 @@ class DetalleDevolucionSerializer(serializers.ModelSerializer):
     class Meta:
         model = DetalleDevolucion
         fields = ['id', 'producto', 'cantidad', 'devolucion']
-        
-class AtributoSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Atributo
-        fields = ['id', 'nombre']
-        
-class ProductoAtributoSerializer(serializers.ModelSerializer):
-    producto = ProductoSerializer()
-    atributo = AtributoSerializer()
 
-    class Meta:
-        model = ProductoAtributo
-        fields = ['id','producto', 'atributo', 'valor']
-        
 class InventarioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Inventario

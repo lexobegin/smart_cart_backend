@@ -6,7 +6,7 @@ from django.db import models
 class Descuento(models.Model):
     nombre = models.CharField(max_length=255)
     descripcion = models.TextField(blank=True)
-    porcentaje = models.DecimalField(max_digits=5, decimal_places=2)  
+    porcentaje = models.DecimalField(max_digits=5, decimal_places=2)
     # created_at = models.DateTimeField(auto_now_add=True)
     # updated_at = models.DateTimeField(auto_now=True)
     def __str__(self):
@@ -20,7 +20,7 @@ class MetodoPago(models.Model):
     # updated_at = models.DateTimeField(auto_now=True)
     def __str__(self):
         return self.tipo
-   
+
 # Modelo User = Usuario
 class User(AbstractUser):
     ROLE_CHOICES = (
@@ -34,7 +34,7 @@ class User(AbstractUser):
     
     def __str__(self):
         return f"{self.username} ({self.role})"
- 
+
 # Modelo Nota de Devolucion
 class NotaDevolucion(models.Model):
     cliente = models.ForeignKey(User, on_delete=models.CASCADE, limit_choices_to={'role': 'CLIENTE'})
@@ -42,13 +42,13 @@ class NotaDevolucion(models.Model):
     # created_at = models.DateTimeField(auto_now_add=True)
     # updated_at = models.DateTimeField(auto_now=True)
     def __str__(self):
-        return f"{self.id} - User #{self.usuario_id} - {self.fecha.strftime("%Y-%m-%d")} "
+        return f"{self.id} - User #{self.usuario_id} - {self.fecha.strftime('%Y-%m-%d')} "
 
 #Modelo Bitacora
 class Bitacora(models.Model):
     fecha = models.DateField()
     accion = models.CharField(max_length=255, blank=True)
-    ip = models.GenericIPAddressField(blank=True, null=True)  
+    ip = models.GenericIPAddressField(blank=True, null=True)
     # llave secundaria usuario
     usuario_id = models.IntegerField()  # Cambiado a IntegerField para almacenar el ID del usuario
     # created_at = models.DateTimeField(auto_now_add=True)
@@ -60,7 +60,7 @@ class Bitacora(models.Model):
 # Modelo Categoria
 class Categoria(models.Model):
     nombre = models.CharField(max_length=255)
-    descripcion = models.TextField(blank=True)  
+    descripcion = models.TextField(blank=True)
     # created_at = models.DateTimeField(auto_now_add=True)
     # updated_at = models.DateTimeField(auto_now=True)
 
@@ -138,18 +138,18 @@ class DetalleDevolucion(models.Model):
     
     def __str__(self):
         return f"{self.id} - (Devolucion #{self.devolucion.id})"
- 
- # Modelo Atributo
+
+# Modelo Atributo
 class Atributo(models.Model):
-    nombre = models.CharField(max_length=255) 
-    productos = models.ManyToManyField(Producto,through='ProductoAtributo',related_name='atributos',blank=True)
+    nombre = models.CharField(max_length=255)
+    producto = models.ManyToManyField(Producto,through='ProductoAtributo',related_name='atributos',blank=True)
     # created_at = models.DateTimeField(auto_now_add=True)
     # updated_at = models.DateTimeField(auto_now=True)
     
     def __str__(self):
         return self.nombre
 
-# Modelo intermedia Producto Atributo  
+# Modelo intermedia Producto Atributo
 class ProductoAtributo(models.Model):
     atributo = models.ForeignKey(Atributo, on_delete=models.CASCADE)
     producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
@@ -172,7 +172,7 @@ class Inventario(models.Model):
 
 # Modilo Nota Salida
 class NotaSalida(models.Model):
-    motivo = models.CharField(max_length=255) 
+    motivo = models.CharField(max_length=255)
     fecha = models.DateField(auto_now_add=True)
     # created_at = models.DateTimeField(auto_now_add=True)
     # updated_at = models.DateTimeField(auto_now=True)
