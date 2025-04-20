@@ -2,9 +2,9 @@
 from rest_framework import viewsets, generics
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from .models import Producto, User, CarritoItem, Venta
-from .serializers import ProductoSerializer, ClienteSerializer, CarritoItemSerializer, VentaSerializer
+from .serializers import ClienteRegisterSerializer, ProductoSerializer, ClienteSerializer, CarritoItemSerializer, VentaSerializer
 from core.permissions import IsAdminOrEmpleado, IsCliente, PermisosPorAccion
 
 from rest_framework.decorators import api_view, permission_classes
@@ -16,10 +16,38 @@ import speech_recognition as sr
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework import status
 
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
+
+class CurrentUserView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        user = request.user
+        return Response({
+            "id": user.id,
+            "username": user.username,
+            "email": user.email,
+            "first_name": user.first_name,
+            "last_name": user.last_name,
+            "role": user.role,
+            "is_staff": user.is_staff,
+            "is_superuser": user.is_superuser,
+        })
+
+class ClienteRegisterView(APIView):
+    def post(self, request):
+        serializer = ClienteRegisterSerializer(data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response({'message': 'Usuario registrado correctamente'}, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 class ProductoViewSet(viewsets.ModelViewSet):
     queryset = Producto.objects.all()
     serializer_class = ProductoSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+    permission_classes = [AllowAny]
 
 class ClienteViewSet(viewsets.ModelViewSet):
     queryset = User.objects.filter(role='CLIENTE')
@@ -62,6 +90,31 @@ class CarritoMovilView(generics.ListAPIView):
 
     def get_queryset(self):
         return CarritoItem.objects.filter(cliente=self.request.user)
+
+class CarritoView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        carrito = CarritoItem.objects.filter(cliente=request.user)
+        serializer = CarritoItemSerializer(carrito, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        producto_id = request.data.get('producto_id')
+        cantidad = request.data.get('cantidad', 1)
+
+        try:
+            producto = Producto.objects.get(id=producto_id)
+            item, created = CarritoItem.objects.get_or_create(
+                cliente=request.user, producto=producto,
+                defaults={'cantidad': cantidad}
+            )
+            if not created:
+                item.cantidad += int(cantidad)
+                item.save()
+            return Response({'message': 'Producto agregado al carrito.'}, status=status.HTTP_201_CREATED)
+        except Producto.DoesNotExist:
+            return Response({'error': 'Producto no encontrado.'}, status=status.HTTP_404_NOT_FOUND)
     
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
