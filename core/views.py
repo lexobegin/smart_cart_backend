@@ -7,7 +7,7 @@ from .models import (
     Atributo, ProductoAtributo, Inventario, NotaSalida, DetalleVenta, DetalleSalida, Producto, CarritoItem, Venta, Categoria, Bitacora, Descuento, Factura, MetodoPago, NotaDevolucion
 )
 from .serializers import (
-    CategoriaSerializer, ProductoSerializer, ClienteSerializer, CarritoItemSerializer, VentaSerializer,
+    CategoriaSerializer, ProductoListSerializer, ProductoSerializer, ClienteSerializer, CarritoItemSerializer, VentaSerializer,
     BitacoraSerializer, DescuentoSerializer, FacturaSerializer, MetodoPagoSerializer, NotaDevolucionSerializer,
     AtributoSerializer, ProductoAtributoSerializer, InventarioSerializer, NotaSalidaSerializer,
     DetalleVentaSerializer, DetalleSalidaSerializer, ClienteRegisterSerializer
@@ -57,6 +57,49 @@ class ProductoViewSet(viewsets.ModelViewSet):
     queryset = Producto.objects.all()
     serializer_class = ProductoSerializer
     permission_classes = [AllowAny]
+
+class ProductoReadOnlyViewSet(viewsets.ReadOnlyModelViewSet):
+    queryset = Producto.objects.all()
+    serializer_class = ProductoSerializer
+    permission_classes = [AllowAny]
+
+#class ProductoListAPIView(generics.ListAPIView):
+#    queryset = Producto.objects.all().select_related('categoria_id').prefetch_related('atributos')
+#    serializer_class = ProductoListSerializer
+#
+#    def get_queryset(self):
+#        #Aquí puedes filtrar productos por categoría o atributo si lo deseas.
+#        queryset = Producto.objects.all().select_related('categoria_id').prefetch_related('atributos')
+#
+#        # Filtro opcional por nombre de atributo
+#        atributo_nombre = self.request.query_params.get('atributo', None)
+#        if atributo_nombre:
+#            queryset = queryset.filter(atributos__nombre=atributo_nombre)
+#
+#        return queryset
+
+#class ProductoListAPIView(generics.ListAPIView):
+#    queryset = Producto.objects.all().select_related('categoria_id').prefetch_related(
+#        'productoatributo_set__atributo'  # Relacionamos Producto con ProductoAtributo, y de ahí con Atributo
+#    )
+#    serializer_class = ProductoListSerializer
+#
+#    def get_queryset(self):
+#        # Obtenemos el queryset base con las optimizaciones de consulta.
+#        queryset = Producto.objects.all().select_related('categoria_id').prefetch_related(
+#            'productoatributo_set__atributo'  # Relacionamos Producto con ProductoAtributo, y de ahí con Atributo
+#        )
+#        
+#        # Filtro opcional por nombre de atributo
+#        atributo_nombre = self.request.query_params.get('atributo', None)
+#        if atributo_nombre:
+#            queryset = queryset.filter(productoatributo__atributo__nombre=atributo_nombre)
+#        
+#        return queryset
+
+class ProductoListAPIView(generics.ListAPIView):
+    queryset = Producto.objects.all().prefetch_related('productoatributo_set__atributo')  # Optimiza las relaciones
+    serializer_class = ProductoListSerializer
 
 class ClienteViewSet(viewsets.ModelViewSet):
     queryset = User.objects.filter(role='CLIENTE')
@@ -136,7 +179,7 @@ def obtener_recomendaciones(request):
 def recomendaciones_cliente_actual(request):
     try:
         user = request.user
-        cliente = User.objects.get(id=user.id, role='CLIENTE') 
+        cliente = User.objects.get(id=user.id, role='CLIENTE')
         recomendaciones = generar_recomendaciones_por_cliente(cliente)
         return Response(recomendaciones)
     except User.DoesNotExist:
@@ -182,44 +225,44 @@ class DescuentoViewSet(viewsets.ModelViewSet):
 class FacturaViewSet(viewsets.ModelViewSet):
     queryset = Factura.objects.all()
     serializer_class = FacturaSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]  
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
     
 class MetodoPagoViewSet(viewsets.ModelViewSet):
     queryset = MetodoPago.objects.all()
     serializer_class = MetodoPagoSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]  
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
     
 class NotaDevolucionViewSet(viewsets.ModelViewSet):
     queryset = NotaDevolucion.objects.all()
     serializer_class = NotaDevolucionSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]  
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
     
 class AtributoViewSet(viewsets.ModelViewSet):
     queryset = Atributo.objects.all()
     serializer_class = AtributoSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado] 
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
     
 class ProductoAtributoViewSet(viewsets.ModelViewSet):
     queryset = ProductoAtributo.objects.all()
     serializer_class = ProductoAtributoSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado] 
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
     
 class InventarioViewSet(viewsets.ModelViewSet):
     queryset = Inventario.objects.all()
     serializer_class = InventarioSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado] 
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
     
 class NotaSalidaViewSet(viewsets.ModelViewSet):
     queryset = NotaSalida.objects.all()
     serializer_class = NotaSalidaSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado] 
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
     
 class DetalleVentaViewSet(viewsets.ModelViewSet):
     queryset = DetalleVenta.objects.all()
     serializer_class = DetalleVentaSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado] 
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
     
 class DetalleSalidaViewSet(viewsets.ModelViewSet):
     queryset = DetalleSalida.objects.all()
     serializer_class = DetalleSalidaSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado] 
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]

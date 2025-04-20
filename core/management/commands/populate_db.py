@@ -3,6 +3,8 @@ import random
 from django.core.management.base import BaseCommand
 from django.contrib.auth.hashers import make_password
 from faker import Faker
+from django.utils import timezone
+from datetime import datetime
 from core.models import *
 
 fake = Faker('es_ES')  # Configuración regional en español
@@ -24,7 +26,7 @@ class Command(BaseCommand):
         self.crear_inventarios()
         self.crear_carritos()
         self.crear_ventas()
-        self.crear_detalles_venta()
+        #self.crear_detalles_venta()
         self.crear_facturas()
         self.crear_notas_devolucion()
         self.crear_detalles_devolucion()
@@ -185,9 +187,16 @@ class Command(BaseCommand):
         productos = Producto.objects.all()
         
         for producto in productos:
+            # Generamos una fecha naive con Faker
+            fecha_vencimiento_naive = fake.date_between(start_date='+1y', end_date='+3y')
+        
+            # Convertimos la fecha naive a una fecha aware
+            fecha_vencimiento_aware = timezone.make_aware(datetime.combine(fecha_vencimiento_naive, datetime.min.time()))
+        
+            # Creamos el registro de inventario
             Inventario.objects.create(
                 cantidad=random.randint(1, 100),
-                fecha_vencimiento=fake.date_between(start_date='+1y', end_date='+3y'),
+                fecha_vencimiento=fecha_vencimiento_aware,
                 producto_id=producto
             )
         self.stdout.write(f"Registros de inventario creados: {Inventario.objects.count()}")
@@ -250,9 +259,16 @@ class Command(BaseCommand):
         
         for _ in range(50):  # 50 notas de devolución
             venta = random.choice(ventas)
+            # Generamos una fecha naive con Faker
+            fecha_naive = fake.date_between(start_date=venta.fecha.date(), end_date='today')
+        
+            # Convertimos la fecha naive a una fecha aware
+            fecha_aware = timezone.make_aware(datetime.combine(fecha_naive, datetime.min.time()))
+        
+        # Creamos el registro de inventario
             NotaDevolucion.objects.create(
                 cliente=venta.cliente,
-                fecha=fake.date_between(start_date=venta.fecha.date(), end_date='today')
+                fecha=fecha_aware
             )
         self.stdout.write(f"Notas de devolución creadas: {NotaDevolucion.objects.count()}")
 
@@ -311,9 +327,16 @@ class Command(BaseCommand):
         ]
         
         for _ in range(50):  # 50 registros de bitácora
+            # Generamos una fecha naive con Faker
+            fecha_naive = fake.date_between(start_date='-1y', end_date='today')
+        
+            # Convertimos la fecha naive a una fecha aware
+            fecha_aware = timezone.make_aware(datetime.combine(fecha_naive, datetime.min.time()))
+        
+            # Creamos el registro de inventario
             Bitacora.objects.create(
                 usuario_id=random.choice(usuarios).id,
-                fecha=fake.date_between(start_date='-1y', end_date='today'),
+                fecha=fecha_aware,
                 accion=random.choice(acciones),
                 ip=fake.ipv4()
             )
