@@ -154,9 +154,6 @@ class ProductoAtributo(models.Model):
     atributo = models.ForeignKey(Atributo, on_delete=models.CASCADE)
     producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
     valor = models.CharField(max_length=255)  # atributo adicional en la tabla intermedia
-
-    class Meta:
-        unique_together = ('atributo', 'producto')
         
     def __str__(self):
         return f'{self.atributo.nombre} - {self.producto.nombre}: {self.valor}'
@@ -177,7 +174,6 @@ class Inventario(models.Model):
 class NotaSalida(models.Model):
     motivo = models.CharField(max_length=255) 
     fecha = models.DateField(auto_now_add=True)
-    productos = models.ManyToManyField(Producto,through='DetalleSalida',related_name='notasalidas',blank=True)
     # created_at = models.DateTimeField(auto_now_add=True)
     # updated_at = models.DateTimeField(auto_now=True)
     
@@ -188,9 +184,6 @@ class DetalleSalida(models.Model):
     notasalida = models.ForeignKey(NotaSalida, on_delete=models.CASCADE)
     producto = models.ForeignKey(Producto, on_delete=models.CASCADE)
     cantidad = models.IntegerField(default=1)  # atributo adicional en la tabla intermedia
-
-    class Meta:
-        unique_together = ('notasalida', 'producto')
         
     def __str__(self):
         return f'{self.id} - {self.notasalida.fecha} - {self.producto.nombre}: {self.cantidad}'

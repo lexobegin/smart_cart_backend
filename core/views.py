@@ -3,8 +3,8 @@ from rest_framework import viewsets, generics
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from .models import Atributo, Bitacora, Categoria, Descuento, DetalleSalida, Factura, Inventario, MetodoPago, NotaDevolucion, NotaSalida, Producto, ProductoAtributo, User, CarritoItem, Venta
-from .serializers import AtributoSerializer, BitacoraSerializer, CategoriaSerializer, DescuentoSerializer, DetalleSalidaSerializer, FacturaSerializer, InventarioSerializer, MetodoPagoSerializer, NotaDevolucionSerializer, NotaSalidaSerializer, ProductoAtributoSerializer, ProductoSerializer, ClienteSerializer, CarritoItemSerializer, VentaSerializer
+from .models import Atributo, Bitacora, Categoria, Descuento, DetalleSalida, DetalleVenta, Factura, Inventario, MetodoPago, NotaDevolucion, NotaSalida, Producto, ProductoAtributo, User, CarritoItem, Venta
+from .serializers import AtributoSerializer, BitacoraSerializer, CategoriaSerializer, DescuentoSerializer, DetalleSalidaSerializer, DetalleVentaSerializer, FacturaSerializer, InventarioSerializer, MetodoPagoSerializer, NotaDevolucionSerializer, NotaSalidaSerializer, ProductoAtributoSerializer, ProductoSerializer, ClienteSerializer, CarritoItemSerializer, VentaSerializer
 from core.permissions import IsAdminOrEmpleado, IsCliente, PermisosPorAccion
 
 from rest_framework.decorators import api_view, permission_classes
@@ -150,6 +150,11 @@ class InventarioViewSet(viewsets.ModelViewSet):
 class NotaSalidaViewSet(viewsets.ModelViewSet):
     queryset = NotaSalida.objects.all()
     serializer_class = NotaSalidaSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado] 
+    
+class DetalleVentaViewSet(viewsets.ModelViewSet):
+    queryset = DetalleVenta.objects.all()
+    serializer_class = DetalleVentaSerializer
     permission_classes = [IsAuthenticated, IsAdminOrEmpleado] 
     
 class DetalleSalidaViewSet(viewsets.ModelViewSet):
