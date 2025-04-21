@@ -1,5 +1,5 @@
 
-from rest_framework import viewsets, generics
+from rest_framework import viewsets, generics, permissions
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
@@ -7,7 +7,7 @@ from .models import (
     Atributo, ProductoAtributo, Inventario, NotaSalida, DetalleVenta, DetalleSalida, Producto, CarritoItem, Venta, Categoria, Bitacora, Descuento, Factura, MetodoPago, NotaDevolucion
 )
 from .serializers import (
-    CategoriaSerializer, ProductoListSerializer, ProductoSerializer, ClienteSerializer, CarritoItemSerializer, VentaSerializer,
+    UserSerializer, UserRegisterSerializer, CategoriaSerializer, ProductoListSerializer, ProductoSerializer, ClienteSerializer, CarritoItemSerializer, VentaSerializer,
     BitacoraSerializer, DescuentoSerializer, FacturaSerializer, MetodoPagoSerializer, NotaDevolucionSerializer,
     AtributoSerializer, ProductoAtributoSerializer, InventarioSerializer, NotaSalidaSerializer,
     DetalleVentaSerializer, DetalleSalidaSerializer, ClienteRegisterSerializer
@@ -24,10 +24,52 @@ from core.utils.recomendaciones import generar_recomendaciones_por_cliente
 import speech_recognition as sr
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework import status
+from rest_framework_simplejwt.tokens import RefreshToken
 
 from django.contrib.auth import get_user_model
+from rest_framework.pagination import PageNumberPagination
+
+class CustomPagination(PageNumberPagination):
+    page_size = 7
 
 User = get_user_model()
+
+# Vista para obtener la lista de usuarios
+class UserListAPIView(generics.ListCreateAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    permission_classes = [IsAuthenticated]  # Asegura que solo los usuarios autenticados puedan ver
+    pagination_class = CustomPagination
+
+    def get_queryset(self):
+        """
+        Filtra los usuarios según el rol proporcionado en los parámetros de la URL.
+        Si no se proporciona un parámetro de rol, se devuelven todos los usuarios.
+        """
+        queryset = User.objects.all()
+        role = self.request.query_params.get('role', None)  # Obtener el parámetro 'role' de la URL
+        if role:
+            queryset = queryset.filter(role=role)  # Filtrar los usuarios por el rol
+        return queryset
+
+# Vista para obtener, actualizar o eliminar un usuario específico
+class UserDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    permission_classes = [IsAuthenticated]  # Asegura que solo los usuarios autenticados puedan ver
+
+# Vista para registrar un nuevo usuario
+class UserRegisterAPIView(generics.CreateAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserRegisterSerializer
+
+# Vista para obtener el usuario actual (si estás usando JWT)
+class CurrentUserAPIView(generics.RetrieveAPIView):
+    permission_classes = [IsAuthenticated]
+    serializer_class = UserSerializer
+
+    def get_object(self):
+        return self.request.user
 
 class CurrentUserView(APIView):
     permission_classes = [IsAuthenticated]
@@ -211,6 +253,7 @@ class CategoriaViewSet(viewsets.ModelViewSet):
     queryset = Categoria.objects.all()
     serializer_class = CategoriaSerializer
     permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+    pagination_class = CustomPagination
     
 class BitacoraViewSet(viewsets.ModelViewSet):
     queryset = Bitacora.objects.all()
