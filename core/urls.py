@@ -4,7 +4,7 @@ from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 # Import views
 from .views import (
-    CurrentUserView, ProductoListAPIView, AtributoViewSet, BitacoraViewSet, CategoriaViewSet, DescuentoViewSet,
+    UserListAPIView, UserDetailAPIView, UserRegisterAPIView, CurrentUserAPIView, CurrentUserView, ProductoListAPIView, AtributoViewSet, BitacoraViewSet, CategoriaViewSet, DescuentoViewSet,
     FacturaViewSet, InventarioViewSet, MetodoPagoViewSet, NotaDevolucionViewSet,
     ProductoReadOnlyViewSet, ProductoViewSet, ClienteRegisterView, ClienteViewSet, CarritoItemViewSet, VentaViewSet,
     ClienteDashboardView, VerRecomendacionesView, CarritoMovilView,
@@ -54,4 +54,10 @@ urlpatterns = [
 
     # Voice recognition API
     path('reconocimiento-voz/', ReconocimientoVozAPIView.as_view(), name='reconocimiento-voz'),
+
+    # Usuario
+    path('users/', UserListAPIView.as_view(), name='user-list'),  # Listar todos los usuarios
+    path('users/register/', UserRegisterAPIView.as_view(), name='user-register'),  # Registrar un usuario
+    path('users/<int:pk>/', UserDetailAPIView.as_view(), name='user-detail'),  # Detalle, actualizar y eliminar usuario
+    path('users/me/', CurrentUserAPIView.as_view(), name='current-user'),  # Obtener el usuario autenticado
 ]
