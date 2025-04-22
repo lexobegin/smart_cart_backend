@@ -64,11 +64,12 @@ class Command(BaseCommand):
 
     def crear_categorias(self):
         categorias = [
-            {"nombre": "Smartphones", "descripcion": "Teléfonos inteligentes de última generación"},
-            {"nombre": "Teléfonos básicos", "descripcion": "Teléfonos con funciones básicas"},
-            {"nombre": "Teléfonos empresariales", "descripcion": "Para uso corporativo"},
-            {"nombre": "Teléfonos resistentes", "descripcion": "Resistentes a agua, polvo y golpes"},
-            {"nombre": "Teléfonos plegables", "descripcion": "Pantallas plegables innovadoras"},
+            {"nombre": "Celulares", "descripcion": "Dispositivos móviles inteligentes para comunicación y entretenimiento"},
+            {"nombre": "Cargadores", "descripcion": "Dispositivos para recargar la batería de celulares y otros electrónicos"},
+            {"nombre": "Fundas", "descripcion": "Accesorios de protección para teléfonos móviles"},
+            {"nombre": "Auriculares", "descripcion": "Dispositivos de audio para llamadas y música"},
+            {"nombre": "Pantallas", "descripcion": "Repuestos o componentes visuales para teléfonos"},
+            {"nombre": "Baterías", "descripcion": "Fuentes de energía recargables para teléfonos móviles"},
         ]
         
         for cat in categorias:

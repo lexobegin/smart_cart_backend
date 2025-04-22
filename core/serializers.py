@@ -158,7 +158,7 @@ class DetalleDevolucionSerializer(serializers.ModelSerializer):
 class InventarioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Inventario
-        fields = ['id', 'cantidad', 'producto_id', 'fecha_ingreso', 'fecha_salida']
+        fields = ['id', 'cantidad', 'producto_id', 'fecha_ingreso', 'fecha_vencimiento']
         
 class NotaSalidaSerializer(serializers.ModelSerializer):
     class Meta:

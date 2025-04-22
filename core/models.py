@@ -73,6 +73,7 @@ class Producto(models.Model):
     descripcion = models.TextField(blank=True)
     precio = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.IntegerField(default=0)
+    #url = models.URLField(blank=True)  # Cambiado a ImageField para manejar imágenes
     # llave secundaria categorias
     categoria_id = models.ForeignKey(Categoria, on_delete=models.CASCADE, default=1)  # Suponiendo que 1 es un ID válido de Categoria
 
