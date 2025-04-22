@@ -2,8 +2,41 @@ from rest_framework import serializers
 from .models import Atributo, Bitacora, Categoria, Descuento, DetalleDevolucion, Factura, Inventario, MetodoPago, NotaDevolucion, Producto, ProductoAtributo, User, CarritoItem, Venta, DetalleVenta
 
 from django.contrib.auth import get_user_model
+from rest_framework_simplejwt.tokens import RefreshToken
 
 User = get_user_model()
+
+# Serializador para el usuario
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['id', 'username', 'email', 'first_name', 'last_name', 'role', 'descuento_id', 'metodo_pago']
+        
+# Serializador para el registro de usuario
+class UserRegisterSerializer(serializers.ModelSerializer):
+    password = serializers.CharField(write_only=True, required=True)
+
+    class Meta:
+        model = User
+        fields = ['username', 'email', 'password', 'first_name', 'last_name', 'role', 'descuento_id', 'metodo_pago']
+    
+    def create(self, validated_data):
+        user = User.objects.create_user(
+            username=validated_data['username'],
+            email=validated_data['email'],
+            password=validated_data['password'],
+            first_name=validated_data['first_name'],
+            last_name=validated_data['last_name'],
+            role=validated_data['role'],
+            descuento_id=validated_data.get('descuento_id', None),
+            metodo_pago=validated_data.get('metodo_pago', None)
+        )
+        return user
+
+# Serializador para obtener el token JWT (Si estás utilizando JWT)
+class TokenObtainSerializer(serializers.Serializer):
+    username = serializers.CharField()
+    password = serializers.CharField()
 
 class ClienteRegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)
