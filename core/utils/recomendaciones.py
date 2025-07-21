@@ -1,6 +1,6 @@
 import pandas as pd
 from mlxtend.frequent_patterns import apriori, association_rules
-from core.models import Venta, CarritoItem, DetalleVenta
+from core.models import *
 
 def generar_recomendaciones_uno(min_support=0.01, min_confidence=0.3):
     # Obtener todas las ventas
@@ -10,7 +10,7 @@ def generar_recomendaciones_uno(min_support=0.01, min_confidence=0.3):
     transacciones = []
 
     for venta in ventas:
-        items = CarritoItem.objects.filter(venta=venta).values_list('producto__nombre', flat=True)
+        items = Carrito.objects.filter(venta=venta).values_list('producto__nombre', flat=True)
         transacciones.append(list(items))
 
     # Crear un DataFrame tipo one-hot encoding
