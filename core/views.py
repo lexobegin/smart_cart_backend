@@ -3,15 +3,10 @@ from rest_framework import viewsets, generics, permissions
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
-from .models import (
-    Atributo, ProductoAtributo, Inventario, NotaSalida, DetalleVenta, DetalleSalida, Producto, CarritoItem, Venta, Categoria, Bitacora, Descuento, Factura, MetodoPago, NotaDevolucion
-)
-from .serializers import (
-    UserSerializer, UserRegisterSerializer, CategoriaSerializer, ProductoListSerializer, ProductoSerializer, ClienteSerializer, CarritoItemSerializer, VentaSerializer,
-    BitacoraSerializer, DescuentoSerializer, FacturaSerializer, MetodoPagoSerializer, NotaDevolucionSerializer,
-    AtributoSerializer, ProductoAtributoSerializer, InventarioSerializer, NotaSalidaSerializer,
-    DetalleVentaSerializer, DetalleSalidaSerializer, ClienteRegisterSerializer
-)
+from .models import *
+
+from .serializers import *
+
 from rest_framework.permissions import AllowAny
 
 from core.permissions import IsAdminOrEmpleado, IsCliente, PermisosPorAccion
@@ -28,6 +23,9 @@ from rest_framework_simplejwt.tokens import RefreshToken
 
 from django.contrib.auth import get_user_model
 from rest_framework.pagination import PageNumberPagination
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import filters
+from .filters import ProductoFilter
 
 class CustomPagination(PageNumberPagination):
     page_size = 7
@@ -95,10 +93,178 @@ class ClienteRegisterView(APIView):
             return Response({'message': 'Usuario registrado correctamente'}, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-class ProductoViewSet(viewsets.ModelViewSet):
-    queryset = Producto.objects.all()
-    serializer_class = ProductoSerializer
+class MarcaViewSet(viewsets.ModelViewSet):
+    queryset = Marca.objects.all()
+    serializer_class = serializers.ModelSerializer  # o crea MarcaSerializer si quieres custom
     permission_classes = [AllowAny]
+
+class TipoCategoriaViewSet(viewsets.ModelViewSet):
+    queryset = TipoCategoria.objects.all()
+    serializer_class = TipoCategoriaSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class CategoriaViewSet(viewsets.ModelViewSet):
+    queryset = Categoria.objects.all()
+    serializer_class = CategoriaSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+    pagination_class = CustomPagination
+
+class ProductoViewSet(viewsets.ModelViewSet):
+    queryset = Producto.objects.all().order_by('-id')
+    #serializer_class = ProductoSerializer
+    permission_classes = [AllowAny]
+
+    def get_serializer_class(self):
+        #if self.action == 'list' or self.action == 'retrieve':
+        if self.action in ['list', 'retrieve']:
+            return ProductoListSerializer
+        return ProductoSerializer
+
+class FotoViewSet(viewsets.ModelViewSet):
+    queryset = Foto.objects.all()
+    serializer_class = FotoSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class AtributoViewSet(viewsets.ModelViewSet):
+    queryset = Atributo.objects.all()
+    serializer_class = AtributoSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+    
+class ProductoAtributoViewSet(viewsets.ModelViewSet):
+    queryset = ProductoAtributo.objects.all()
+    serializer_class = ProductoAtributoSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class MetodoPagoViewSet(viewsets.ModelViewSet):
+    queryset = MetodoPago.objects.all()
+    serializer_class = MetodoPagoSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class DescuentoViewSet(viewsets.ModelViewSet):
+    queryset = Descuento.objects.all()
+    serializer_class = DescuentoSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class ProductoDescuentoViewSet(viewsets.ModelViewSet):
+    queryset = ProductoDescuento.objects.all()
+    serializer_class = ProductoDescuentoSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class CarritoMovilView(generics.ListAPIView):
+    serializer_class = CarritoSerializer
+    permission_classes = [IsAuthenticated, IsCliente]
+
+    def get_queryset(self):
+        return Carrito.objects.filter(cliente=self.request.user)
+
+class CarritoView(APIView):
+    queryset = Carrito.objects.all()
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        carrito = Carrito.objects.filter(cliente=request.user)
+        serializer = CarritoSerializer(carrito, many=True)
+        return Response(serializer.data)
+
+    def post(self, request):
+        producto_id = request.data.get('producto_id')
+        cantidad = request.data.get('cantidad', 1)
+
+        try:
+            producto = Producto.objects.get(id=producto_id)
+            item, created = Carrito.objects.get_or_create(
+                cliente=request.user, producto=producto,
+                defaults={'cantidad': cantidad}
+            )
+            if not created:
+                item.cantidad += int(cantidad)
+                item.save()
+            return Response({'message': 'Producto agregado al carrito.'}, status=status.HTTP_201_CREATED)
+        except Producto.DoesNotExist:
+            return Response({'error': 'Producto no encontrado.'}, status=status.HTTP_404_NOT_FOUND)
+    
+    def patch(self, request, pk=None):
+        try:
+            item = Carrito.objects.get(id=pk, cliente=request.user)
+            cantidad = int(request.data.get('cantidad', 1))
+            item.cantidad = cantidad
+            item.save()
+            return Response({'message': 'Cantidad actualizada.'}, status=status.HTTP_200_OK)
+        except Carrito.DoesNotExist:
+            return Response({'error': 'Item no encontrado'}, status=status.HTTP_404_NOT_FOUND)
+
+    
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def obtener_recomendaciones(request):
+    recomendaciones = generar_recomendaciones()
+    return Response(recomendaciones)
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def recomendaciones_cliente_actual(request):
+    try:
+        user = request.user
+        cliente = User.objects.get(id=user.id, role='CLIENTE')
+        recomendaciones = generar_recomendaciones_por_cliente(cliente)
+        return Response(recomendaciones)
+    except User.DoesNotExist:
+        return Response({"error": "Cliente no encontrado"}, status=404)
+
+class CarritoDetalleViewSet(viewsets.ModelViewSet):
+    queryset = CarritoDetalle.objects.all()
+    serializer_class = CarritoDetalleSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class PedidoViewSet(viewsets.ModelViewSet):
+    queryset = Pedido.objects.all()
+    serializer_class = PedidoSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class PedidoDetalleViewSet(viewsets.ModelViewSet):
+    queryset = PedidoDetalle.objects.all()
+    serializer_class = PedidoDetalleSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class VentaViewSet(viewsets.ModelViewSet):
+    queryset = Venta.objects.all().order_by('-fecha_hora')
+    serializer_class = VentaSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class DetalleVentaViewSet(viewsets.ModelViewSet):
+    queryset = DetalleVenta.objects.all()
+    serializer_class = DetalleVentaSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class FacturaViewSet(viewsets.ModelViewSet):
+    queryset = Factura.objects.all()
+    serializer_class = FacturaSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class ComprobanteViewSet(viewsets.ModelViewSet):
+    queryset = Comprobante.objects.all()
+    serializer_class = ComprobanteSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class SucursalViewSet(viewsets.ModelViewSet):
+    queryset = Sucursal.objects.all().order_by('id')  # o el campo que prefieras
+    serializer_class = SucursalSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class InventarioViewSet(viewsets.ModelViewSet):
+    queryset = Inventario.objects.all()
+    serializer_class = InventarioSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class DevolucionViewSet(viewsets.ModelViewSet):
+    queryset = Devolucion.objects.all()
+    serializer_class = DevolucionSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+
+class DetalleDevolucionViewSet(viewsets.ModelViewSet):
+    queryset = DetalleDevolucion.objects.all()
+    serializer_class = DetalleDevolucionSerializer
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
 
 class ProductoReadOnlyViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Producto.objects.all()
@@ -140,8 +306,17 @@ class ProductoReadOnlyViewSet(viewsets.ReadOnlyModelViewSet):
 #        return queryset
 
 class ProductoListAPIView(generics.ListAPIView):
-    queryset = Producto.objects.all().prefetch_related('productoatributo_set__atributo')  # Optimiza las relaciones
+    #queryset = Producto.objects.select_related('categoria_id').prefetch_related('atributos').order_by('-id')  # Optimiza las relaciones
+    #serializer_class = ProductoListSerializer
     serializer_class = ProductoListSerializer
+    filter_backends = [DjangoFilterBackend]
+    filterset_class = ProductoFilter
+
+    def get_queryset(self):
+        orden_param = self.request.query_params.get('orden', 'desc')  # valor por defecto: descendente
+        orden = '-id' if orden_param == 'desc' else 'id'
+
+        return Producto.objects.select_related('categoria_id').prefetch_related('atributos').order_by(orden)
 
 class ClienteViewSet(viewsets.ModelViewSet):
     queryset = User.objects.filter(role='CLIENTE')
@@ -149,14 +324,9 @@ class ClienteViewSet(viewsets.ModelViewSet):
     permission_classes = [IsAuthenticated, PermisosPorAccion]
 
 class CarritoItemViewSet(viewsets.ModelViewSet):
-    queryset = CarritoItem.objects.all()
-    serializer_class = CarritoItemSerializer
+    queryset = Carrito.objects.all()
+    serializer_class = CarritoSerializer
     permission_classes = [IsAuthenticated, IsCliente]
-
-class VentaViewSet(viewsets.ModelViewSet):
-    queryset = Venta.objects.all()
-    serializer_class = VentaSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
 
 class ClienteDashboardView(APIView):
     permission_classes = [IsAuthenticated, IsCliente]
@@ -177,55 +347,6 @@ class VerRecomendacionesView(APIView):
             {"producto_id": 2, "nombre": "Protector de Pantalla"},
         ]
         return Response({"recomendaciones": recomendaciones})
-    
-class CarritoMovilView(generics.ListAPIView):
-    serializer_class = CarritoItemSerializer
-    permission_classes = [IsAuthenticated, IsCliente]
-
-    def get_queryset(self):
-        return CarritoItem.objects.filter(cliente=self.request.user)
-
-class CarritoView(APIView):
-    permission_classes = [IsAuthenticated]
-
-    def get(self, request):
-        carrito = CarritoItem.objects.filter(cliente=request.user)
-        serializer = CarritoItemSerializer(carrito, many=True)
-        return Response(serializer.data)
-
-    def post(self, request):
-        producto_id = request.data.get('producto_id')
-        cantidad = request.data.get('cantidad', 1)
-
-        try:
-            producto = Producto.objects.get(id=producto_id)
-            item, created = CarritoItem.objects.get_or_create(
-                cliente=request.user, producto=producto,
-                defaults={'cantidad': cantidad}
-            )
-            if not created:
-                item.cantidad += int(cantidad)
-                item.save()
-            return Response({'message': 'Producto agregado al carrito.'}, status=status.HTTP_201_CREATED)
-        except Producto.DoesNotExist:
-            return Response({'error': 'Producto no encontrado.'}, status=status.HTTP_404_NOT_FOUND)
-    
-@api_view(['GET'])
-@permission_classes([IsAuthenticated])
-def obtener_recomendaciones(request):
-    recomendaciones = generar_recomendaciones()
-    return Response(recomendaciones)
-
-@api_view(['GET'])
-@permission_classes([IsAuthenticated])
-def recomendaciones_cliente_actual(request):
-    try:
-        user = request.user
-        cliente = User.objects.get(id=user.id, role='CLIENTE')
-        recomendaciones = generar_recomendaciones_por_cliente(cliente)
-        return Response(recomendaciones)
-    except User.DoesNotExist:
-        return Response({"error": "Cliente no encontrado"}, status=404)
 
 class ReconocimientoVozAPIView(APIView):
     permission_classes = [IsAuthenticated]
@@ -248,64 +369,25 @@ class ReconocimientoVozAPIView(APIView):
             return Response({"error": "No se pudo entender el audio."}, status=status.HTTP_400_BAD_REQUEST)
         except sr.RequestError as e:
             return Response({"error": f"Error en el servicio de reconocimiento: {str(e)}"}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-        
-class CategoriaViewSet(viewsets.ModelViewSet):
-    queryset = Categoria.objects.all()
-    serializer_class = CategoriaSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
-    pagination_class = CustomPagination
-    
+
 class BitacoraViewSet(viewsets.ModelViewSet):
     queryset = Bitacora.objects.all()
     serializer_class = BitacoraSerializer
     permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
-    
-class DescuentoViewSet(viewsets.ModelViewSet):
-    queryset = Descuento.objects.all()
-    serializer_class = DescuentoSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
-    
-class FacturaViewSet(viewsets.ModelViewSet):
-    queryset = Factura.objects.all()
-    serializer_class = FacturaSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
-    
-class MetodoPagoViewSet(viewsets.ModelViewSet):
-    queryset = MetodoPago.objects.all()
-    serializer_class = MetodoPagoSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
-    
-class NotaDevolucionViewSet(viewsets.ModelViewSet):
+    pagination_class = CustomPagination
+
+
+"""class NotaDevolucionViewSet(viewsets.ModelViewSet):
     queryset = NotaDevolucion.objects.all()
     serializer_class = NotaDevolucionSerializer
     permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
-    
-class AtributoViewSet(viewsets.ModelViewSet):
-    queryset = Atributo.objects.all()
-    serializer_class = AtributoSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
-    
-class ProductoAtributoViewSet(viewsets.ModelViewSet):
-    queryset = ProductoAtributo.objects.all()
-    serializer_class = ProductoAtributoSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
-    
-class InventarioViewSet(viewsets.ModelViewSet):
-    queryset = Inventario.objects.all()
-    serializer_class = InventarioSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
-    
+
 class NotaSalidaViewSet(viewsets.ModelViewSet):
     queryset = NotaSalida.objects.all()
     serializer_class = NotaSalidaSerializer
     permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
-    
-class DetalleVentaViewSet(viewsets.ModelViewSet):
-    queryset = DetalleVenta.objects.all()
-    serializer_class = DetalleVentaSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
-    
+
 class DetalleSalidaViewSet(viewsets.ModelViewSet):
     queryset = DetalleSalida.objects.all()
     serializer_class = DetalleSalidaSerializer
-    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]
+    permission_classes = [IsAuthenticated, IsAdminOrEmpleado]"""
