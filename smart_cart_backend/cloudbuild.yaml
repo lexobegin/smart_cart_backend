@@ -1,0 +1,27 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/smart-cart-backend", "."]
+
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/$PROJECT_ID/smart-cart-backend"]
+
+  - name: "gcr.io/google.com/cloudsdktool/cloud-sdk"
+    entrypoint: gcloud
+    args:
+      [
+        "run",
+        "deploy",
+        "smart-cart-backend",
+        "--image",
+        "gcr.io/$PROJECT_ID/smart-cart-backend",
+        "--region",
+        "us-central1",
+        "--platform",
+        "managed",
+        "--allow-unauthenticated",
+        "--set-env-vars",
+        "DB_HOST=xxx,DB_PORT=5432,DB_NAME=xxx,DB_USER=xxx,DB_PASSWORD=xxx",
+      ]
+
+images:
+  - "gcr.io/$PROJECT_ID/smart-cart-backend"
