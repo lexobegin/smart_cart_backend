@@ -22,6 +22,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copiar el resto del proyecto
 COPY . .
 
+# Ejecutar collectstatic (archivos estáticos)
+RUN python manage.py collectstatic --noinput
+
 # Exponer el puerto en que se ejecutará
 EXPOSE 8080
 
