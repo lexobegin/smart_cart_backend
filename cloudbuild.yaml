@@ -20,7 +20,7 @@ steps:
         "managed",
         "--allow-unauthenticated",
         "--set-env-vars",
-        "DB_HOST=xxx,DB_PORT=5432,DB_NAME=xxx,DB_USER=xxx,DB_PASSWORD=xxx",
+        "DB_HOST=35.247.228.75,DB_PORT=5432,DB_NAME=smartcart_db,DB_USER=postgres,DB_PASSWORD=postgres",
       ]
 
 images:
