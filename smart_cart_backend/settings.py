@@ -83,6 +83,7 @@ WSGI_APPLICATION = 'smart_cart_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+#LOCAL
 """DATABASES = {
     'default': {
         #'ENGINE': 'django.db.backends.sqlite3',
@@ -99,7 +100,22 @@ WSGI_APPLICATION = 'smart_cart_backend.wsgi.application'
     }
 }"""
 
+#PRODUCCION
 DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'smartcart_db_prod',
+        'USER': 'postgres',
+        'PASSWORD': '12345',
+        'HOST': 'localhost',
+        'PORT': '5432',
+        'OPTIONS': {
+            'client_encoding': 'UTF8',
+        },
+    }
+}
+
+"""DATABASES = {
     'default': {
         #'ENGINE': 'django.db.backends.sqlite3',
         #'NAME': BASE_DIR / 'db.sqlite3',
@@ -113,7 +129,7 @@ DATABASES = {
             'client_encoding': 'UTF8',
         },
     }
-}
+}"""
 
 AUTH_USER_MODEL = 'core.User'
 
