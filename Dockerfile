@@ -1,36 +1,35 @@
 # Imagen base de Python
 FROM python:3.11-slim
 
-# Variables de entorno para evitar errores de entrada
+# Variables de entorno para evitar archivos pyc y mejorar logs
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
-# Crear directorio de trabajo
+# Directorio de trabajo
 WORKDIR /app
 
-# Instalar dependencias del sistema
-RUN apt-get update \
-    && apt-get install -y netcat gcc postgresql-client libpq-dev \
-    && apt-get clean
+# Instalar dependencias del sistema (incluyendo netcat-openbsd)
+RUN apt-get update && \
+    apt-get install -y netcat-openbsd gcc postgresql-client libpq-dev && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
-# Copiar dependencias
+# Copiar e instalar dependencias de Python
 COPY requirements.txt .
-
-# Instalar dependencias de Python
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copiar el resto del proyecto
+# Copiar todo el proyecto
 COPY . .
 
-# Ejecutar collectstatic (archivos estáticos)
+# Generar archivos estáticos (si aplica)
 RUN python manage.py collectstatic --noinput
 
-# Exponer el puerto en que se ejecutará
+# Exponer el puerto que Render espera
 EXPOSE 10000
 
-# Agregar script de inicio para esperar a la BD (opcional)
+# Copiar el script de inicio y darle permisos
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
-# Comando de inicio
+# Comando de arranque
 ENTRYPOINT ["/entrypoint.sh"]
