@@ -17,5 +17,5 @@ fi
 echo "Base de datos disponible. Aplicando migraciones..."
 python manage.py migrate
 
-echo "Arrancando servidor Django..."
-gunicorn smart_cart_backend.wsgi:application --bind 0.0.0.0:8080
+echo "Arrancando servidor Django en puerto 10000..."
+gunicorn smart_cart_backend.wsgi:application --bind 0.0.0.0:10000
