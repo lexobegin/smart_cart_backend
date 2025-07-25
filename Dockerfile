@@ -26,7 +26,7 @@ COPY . .
 RUN python manage.py collectstatic --noinput
 
 # Exponer el puerto en que se ejecutará
-EXPOSE 8080
+EXPOSE 10000
 
 # Agregar script de inicio para esperar a la BD (opcional)
 COPY ./entrypoint.sh /entrypoint.sh
