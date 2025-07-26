@@ -22,7 +22,15 @@ if ! nc -z "$DB_HOST" "$DB_PORT"; then
 fi
 
 echo "Base de datos disponible. Aplicando migraciones..."
+# python manage.py makemigrations core
 python manage.py migrate
+
+echo "Borrando todos los datos de la base de datos..."
+python manage.py flush --noinput
+
+echo "Poblando datos iniciales..."
+python manage.py populate_user_db
+python manage.py populate_producto_db
 
 echo "Recolectando archivos estáticos..."
 python manage.py collectstatic --noinput

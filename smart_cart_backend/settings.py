@@ -39,7 +39,8 @@ ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',') + [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200",
+    "http://localhost:4200",  # desarrollo local
+    "https://incandescent-zuccutto-29afd6.netlify.app",  # producción en Render
 ]
 
 
