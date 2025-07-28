@@ -21,8 +21,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#SECRET_KEY = 'django-insecure-b$8%*aks2m*c+ha-#@_3y4wz%zop5vsu-q-=d)a7*r%hz%jme*'
-SECRET_KEY = os.environ.get('SECRET_KEY', 'clave-insegura-para-dev')
+SECRET_KEY = 'django-insecure-b$8%*aks2m*c+ha-#@_3y4wz%zop5vsu-q-=d)a7*r%hz%jme*'
+#SECRET_KEY = os.environ.get('SECRET_KEY', 'clave-insegura-para-dev')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
@@ -40,7 +40,7 @@ ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', '').split(',') + [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",  # desarrollo local
-    "https://incandescent-zuccutto-29afd6.netlify.app",  # producción en Render
+    "https://incandescent-zuccutto-29afd6.netlify.app",  # producción en Netlify
 ]
 
 
@@ -95,6 +95,8 @@ WSGI_APPLICATION = 'smart_cart_backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+import dj_database_url
+
 #LOCAL
 """DATABASES = {
     'default': {
@@ -113,7 +115,7 @@ WSGI_APPLICATION = 'smart_cart_backend.wsgi.application'
 }"""
 
 #PRODUCCION
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'smartcart_db_prod',
@@ -125,13 +127,13 @@ WSGI_APPLICATION = 'smart_cart_backend.wsgi.application'
             'client_encoding': 'UTF8',
         },
     }
-}"""
-
-import dj_database_url
-
-DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 }
+
+
+
+"""DATABASES = {
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
+}"""
 
 """DATABASES = {
     'default': {
